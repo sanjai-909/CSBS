@@ -1,0 +1,18 @@
+1)   Write a file program to read the content from the file and display the count of vowels, special characters in it.
+
+2)   Write a C++ program to define a base class named 'Student' with attributes like 'name' and 'registration number'. Then, create three derived classes: 'Extramural', 'Academics', and 'Sports'. Finally, implement a class 'Result' that inherits from the aforementioned classes to compute and store the overall result.
+
+
+3)   In a multimedia application, you need to model multimedia objects, such as images and videos, as well as text content. Create a design using multiple inheritance to support both the media-related attributes and the text-related attributes in a MultimediaObject class.
+
+
+4)   How would you use the greater-than (>) operator to compare the salaries of employees and determine which employee has a higher salary in a C++ program with their details?
+
+
+5)   Imagine you're developing a data analysis application that needs to find the maximum value in datasets of various types, including integers, floating-point numbers, and dates. How could you adapt the program's template specialization concept to handle this diverse set of data types?
+
+
+6)   Create a base class 'Bill' with virtual functions to calculate the bill for clothing and electronic items, which are
+derived classes. How would you design such a C++ program?
+
+7)   Write a file program to read and write student details.

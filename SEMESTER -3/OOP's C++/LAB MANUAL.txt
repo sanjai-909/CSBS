@@ -1,0 +1,541 @@
+LAB 1 ------------------BRANCHING
+
+1)Write a C++ program to find prime numbers between two intervals.
+
+2)Write a program which takes PIN number of the user as input and then verifies his pin. If pin
+is verified the program shall display “Pin verified” and “Welcome”; otherwise the program shall
+give user another chance. After 3 wrong attempts, the program shall display “Limit expired” and
+then exit. Use for loops to implement the logic.
+
+3)Create the equivalent of four-function calculator. The program should ask the user to enter a
+number, an operator and another number. (Use floating Point) It should then carry out the
+specified arithmetical operation: Adding, Subtracting, Multiplying, Or Dividing the Two
+numbers. Use a switch statement to select the operation. Finally display the result.
+
+
+==========================================================================================================================================
+LAB 2-------------------MULTIDIEMSIONAL ARRAY
+
+a) Write a program to multiply the given array elements.
+
+b)Write a program to check whether the given matrix is Symmetric, Skew symmetric,Diagonal or Identity.
+
+c) Write a program to store temperature of two cities of a weak and display it.
+
+==========================================================================================================================================
+LAB 3-------------------FUNCTIONS
+
+1)Inline function
+
+2)Call by value
+
+3)Call by reference
+
+==========================================================================================================================================
+PRATISE PROGRAM
+
+1. Write a C++ program in which create a class called Part where three data members like part name as
+character array, partnumber and cost. Also having member functions setPart() to set the values of the class
+members and showPart() to show the part information. Exercise the same using main() function.
+
+2. Create a class name “Student’’ with Name, Rollno and Phoneno as private data members. Include
+member function getdata() and putdata() to input and print all details of the objects, respectively. Add a
+member function checkname() that accepts a name as input, checks if the name matches with the object
+name. If yes, it prints all the details of the object with putdata() fun else print “’No name found”. Write
+C++ pgm for this.
+
+==========================================================================================================================================
+ASSIGNMENT 1
+
+Write a program to create a Book class
+in C++ to store information about books. Each book has attributes including a
+unique book ID, name, and price. Implement the class using a constructor and
+write a main function to demonstrate the functionality as below,
+
+
+1)     
+Creates an array of Book objects and
+initializes them with different book details.
+
+
+2)     
+Accepts a book ID from the user and uses
+the searchBook function to find the book's index in the array.
+
+
+3)     
+If the book is found, print out the
+book's details (ID, name, price), otherwise, print a message indicating the
+book was not found.
+
+
+Your solution should
+demonstrate the usage of constructors, array of objects, and the search
+function.
+
+ANSWER:-
+#include<iostream>
+#include<string>
+using namespace std;
+int t=1;
+
+class book{
+    private:
+     int id;
+     string name;
+     double price;
+    public:
+     book(){
+        cout<<"ENTER THE DETAILS OF BOOK "<<t<<":-\n";
+        cout<<"Enter the book id: ";
+        cin>>id;
+        t++;
+        cout<<"Enter the name of the book: ";
+        cin>>name;
+        cout<<"Enter the price of the book: ";
+        cin>>price;
+        cout<<endl;
+     }
+     void display(){
+        cout<<"Name of the book:"<<name<<endl;
+        cout<<"Book ID: "<<id<<endl;
+        cout<<"price of the book: "<<price<<endl<<endl;
+     }
+     bool checkbook(int temp){
+        if(temp==id){
+            cout<<"\nBook was found !"<<endl;
+            display();
+            return true;
+        }
+        else{
+            return false;
+        }
+     }
+     bool CHECKBOOK(string temp){
+        if(temp==name){
+            cout<<"\nBook was found !"<<endl;
+            display();
+            return true;
+        }
+        else{
+            return false;
+        }
+     }
+};
+int main(){
+    int n;
+    cout<<"Enter the number of books: ";
+    cin>>n;
+    cout<<endl;
+
+    book b[n];
+    int op;
+    cout<<"Why did you here?"<<endl;
+    do{
+        cout<<"1-To visit the Library Books"<<endl;
+        cout<<"2-To check the specified book: "<<endl;
+        cout<<"3-To Exit"<<endl;
+        cout<<"[ENTER]>>>";
+        cin>>op;
+        switch(op){
+            case 1:
+                   cout<<"Displaying the Books in the Library:-"<<endl;
+                   for(int i=0;i<n;i++){
+                   cout<<"\nDetails of Book "<<i+1<<":-"<<endl;
+                   b[i].display();
+                   cout<<endl;
+                   }
+                  break;
+            case 2: int w;
+                    cout<<"\nWhat do you know about the book ? \n";
+                    cout<<"1-Name of the book\n";
+                    cout<<"2-Id of the book\n";
+                    cout<<"[ENTER]>>";
+                    cin>>w;
+                         if(w==1)
+                            {
+                                string Search;
+                                   cout<<"\nEnter the name of the book: ";
+                                   cin>>Search;
+
+                                   bool r;
+                                   for(int i=0;i<n;i++){
+                                    r=b[i].CHECKBOOK(Search);
+                                    if(r){
+                                        break;
+                                    }
+                                   }
+                                   if(!r){
+                                    cout<<"Book was not Found !\n"<<endl;
+                                    break;
+                                   }
+                            }
+                         if(w==2){
+                                     int search;
+                                    cout<<"\nEnter the Book id you want to search: ";
+                                    cin>>search;
+
+                                    bool x;
+                                    for(int i=0;i<n;i++){
+                                     x= b[i].checkbook(search);
+                                     if(x){
+                                      break;
+                                     }
+                                    }  
+                                    if(!x){
+                                      cout<<"Book was not found !\n"<<endl;
+                                      break;
+                                    }   
+                                }
+                            if(w!=1 && w!=2){
+                                cout<<"ERROR ! Invaild option\n"<<endl;
+                            }
+                     
+                                 
+                    break;
+                   
+            default:cout<<"\nExited successfully.........\n";
+        }
+    }while(op<3);
+    
+}
+==========================================================================================================================================
+LAB 4-------------------PRE-PROCESSOR DIRECTIVES
+a) Write a c++ Programs that uses constant as pre-processor directives using #define.
+
+B) Define a macro to find out the smaller of 2 numbers. Invoke this macro in the program with appropriate arguments.
+#define min(X, Y) ((X) < (Y) ? (X) : (Y))
+
+C) Implement the above using appropriate conditional pre-processor directives and to verify progress of code while debugging.
+D)USE PRAGMA STARTUP AND PRAGAMA END
+
+==========================================================================================================================================
+LAB 5-------------------PROGRAMS USING CLASS AND OBJECTS
+
+a) Create a class called carpart that has int member data for car id, int member data for charge/hour and float
+member data for time. Set the data and show the charges and parked hours of
+corresponding car id. Make two member functions for setting and showing the
+data. Member function should be called from other functions.
+
+b)Create
+a class called Employee that contains the name and an employee number (type
+long). Include a member function called getData() to get data from the user for
+insertion into the object, another function called putData() to display the data. Assume the
+name as no embedded blanks. Write a main() program to exercise this class. It
+should create array of type Employee and then invite the user to input data for
+up to 10 employees. Finally, it should print out the data for all the
+employees. (Use setw, setiosflags).
+c)Write a program that calculates the
+average of up to 10 English distances input by the user. Create an array of
+objects of the Distance class with the data members as feets and inches to calculate the
+average create a member function called avgDistance(). (Hint: 12 inches = 1 Feet)
+==========================================================================================================================================
+QUISZ ASSIGNMENT
+Blank Quiz
+Total points
+15/15
+The respondent's email (126018042@sastra.ac.in) was recorded on submission of this form.
+ 
+1. Who invented C++?
+A)Dennis Ritchie
+B)Ken Thompson
+C)Brian Kernighan
+D)Bjarne Stroustrup
+ANS=D
+ 
+2)What is C++?
+A)C++ is an object oriented programming language
+B)C++ is a procedural programming language
+C)C++ supports both procedural and object oriented programming language
+D)C++ is a functional programming language
+ANS=C 
+
+3)Which of the following is the correct syntax of including a user defined header files in C++?
+A)#include [userdefined]
+B)#include “userdefined”
+C)#include <userdefined.h>
+D)#include <userdefined>
+ABS=B 
+
+Which of the following user-defined header file extension used in c++?
+a) hg
+b) cpp
+c) h
+d) hf
+ANS=C
+ 
+What will be the output of the following C++ code?
+#include <iostream> 
+#include <string>
+using namespace std; 
+int main(int argc, char const *argv[])
+{
+	char s1[6] = "Hello";
+	char s2[6] = "World";
+	char s3[12] = s1 + " " + s2;
+	cout<<s3;
+	return 0;
+}
+a) Hello
+b) World
+c) Error
+d) Hello World
+ANS C
+ 
+Which of the following is true about structure and class
+Members of a class are private by default and structure as public
+Instance of a class is an ‘object’ and structure is variable
+Class support inheritance but structure does not.
+All the above
+ANS D
+
+ 
+ 
+CPP avoids function call overhead using? 
+Constructor
+Operator overloading
+Function overloading
+Inline Function
+ANS D
+
+Which of the following C++ code will give error on compilation?
+================code 1=================
+#include <iostream>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+	cout<<"Hello World";
+	return 0;
+}
+========================================
+================code 2=================
+#include <iostream>
+int main(int argc, char const *argv[])
+{
+	std::cout<<"Hello World";
+	return 0;
+}
+========================================
+a) Code 1 only
+b) Neither code 1 nor code 2
+c) Both code 1 and code 2
+d) Code 2 only
+ANS B
+ 
+What is the value of p in the following C++ code snippet?
+ #include <iostream>    
+using namespace std;    
+int main()    
+{        
+        int p;        bool a = true;        bool b = false;        int x = 10;        int y = 5;       
+        p = ((x | y) + (a + b));       
+         cout << p;       
+        return 0;    
+}
+a) 12
+b) 0
+c) 2
+d) 16
+
+ANS D
+
+ 
+ 
+Which is more effective while calling the C++ functions?
+a) call by object
+b) call by pointer
+c) call by value
+d) call by reference
+
+ANS D
+ 
+ 
+What will be the output of the following C++ program?
+#include <iomanip>    
+#include <iostream>   
+ using namespace std;   
+ int main()    {     
+   cout << setprecision(17);        
+double d = 0.1;      
+  cout << d << endl;       
+ return 0;    }
+a) compile time error
+b) 0.100001
+c) 0.11
+d) 0.10000000000000001
+
+ANS D
+ 
+ 
+Which keyword is used to define the macros in c++?
+a) #macro
+b) #define
+c) macro
+d) define
+
+ANS B
+ 
+The C++ code which causes abnormal termination/behaviour of a program should be written under _________ block.
+a) catch
+b) throw
+c) try
+d) finally
+
+ANS C
+ 
+Which of the following symbol is used to declare the preprocessor directives in C++?
+a) $
+b) ^
+c) #
+d) *
+
+ANS C
+ 
+What will be the output of the following C++ code?
+#include <iostream>
+using namespace std;
+void square (int *x, int *y)
+{
+	*x = (*x) * --(*y);
+}
+int main ( )
+{
+	int number = 30;
+	square(&number, &number);
+	cout << number;
+	return 0;
+}
+a) 30
+b) Error
+c) Segmentation fault
+d) 870
+
+ANS D
+
+
+==========================================================================================================================================
+PRACTISE PROGRAM
+Write a C++ program that:
+Defines a symbolic constant called "DEPARTMENT" representing the department of the student (e.g., "CSE" for Computer Science, "ECE" for Electronics, "MECH" for Mechanical).
+Checks if "DEPARTMENT" is defined.
+If "DEPARTMENT" is defined:
+Checks the value of "DEPARTMENT" and sets eligibility accordingly:
+If the "DEPARTMENT" is "CSE" or "ECE", the student is eligible.
+If the "DEPARTMENT" is "MECH", the student is not eligible.
+For any other department value, the student is marked as ineligible.
+If "DEPARTMENT" is not defined, the student is marked as ineligible.
+Include appropriate preprocessor directives to handle these conditions, and also include test cases to demonstrate eligibility based on different department values.
+
+==========================================================================================================================================
+LAB 6-------------------CONSTRUCTOR & DESTRUCTOR
+1. Create a class for counting the number of objects created and destroyed within various
+block using constructors and destructor.
+
+2.Create a class called Time that has separate int member data for hours, minutes and seconds. One constructor should initialize this data to zero, and another should initialize it to fixed values. Another member function should display it, in 11:59:59 format. The final member function should add two objects of type Time passed as arguments. A main() program should create two initialized Time objects and one that is not initialized. Then it should add two initialized value together, leaving the result in the third Time variable. Finally, it should display the value of this third variable.
+
+3.Create a class called Details that has data member for getting the customer details (name, area, phone_no, area_code) and initialize the area code using constructor, A main() program to display the customer details. Strcat function can be used to
+concatenate the area code with phone_no.
+
+==========================================================================================================================================
+LAB 7-------------------OPERATOR OVERLOADING
+1)increment
+2)decrement
+3)+
+4)-
+5)>
+6)<
+
+==========================================================================================================================================
+LAB 8-------------------INHERITENCE
+
+a. Create a class named LIVING_BEINGS that has a private data member –
+Type_id(integer type; 1 - PLANTS, 2 -ANIMALS). Include parameterized constructor
+to initialize this data member. Declare a member function whoAmI() that has to be
+overridden in the derived classes to display the details of the object.
+Derive a class named PLANTS that has data members – Name(String),
+Flower_Color(string) and EdibleOrNot(bool). Include default and parameterized
+constructors to initialize the values for data members. Invoke parent constructor to
+initialize the parent data member also. Include member functions – myColor(string) –
+that displays the details of the PLANTS objects of a particular Flower_Color (user
+input).
+Derive another class named ANIMALS that has a data member – Name (String).
+Include parameterized constructor with 2 arguments - a string and an integer. Assign
+the string input to Name and invoke the base class constructor with integer
+argument. Include member functions – (i) length() - to return the length of the Name
+member, (ii) overload &gt; operator to compare the lengths of Name member and return
+the Name member of the object whose length is longer.
+Create objects of PLANTS and ANIMALS in main() method, invoke the member
+functions and demonstrate their functions.
+
+b. Develop a C++ program for hospital management. The PATIENT class has details
+such as PatientId, PatientName, Age, Disease, Blood_Group and DoctorId. Include
+parameterized constructor to get the details for the data members. The DOCTOR
+class has details such as DoctorId, DoctorName and Specialization. Include
+parameterized constructor to take input for the data members. Create a class
+TREATMENT derived from PATIENT and DOCTOR classes. Include a member
+function search(int,int) in TREATMENT class, that takes the PatientId and DoctorId
+as input and searches for a matching record in PATIENT objects. If found, then
+display the PatientId, patient name, DoctorId and DoctorName. Overload the
+search() function to take the DoctorId as input and retrieve the details of the patients
+of that doctor. Include a friend function called search() that retrieves the details of
+DOCTOR object based on the patient name (PNAME) taken as user input. In main
+method, create an array of TREATMENT objects and demonstrate the function of the
+member functions and the friend function. Create a menu driven program to execute
+the above given scenario.
+
+==========================================================================================================================================
+LAB 9-------------------FRIEND FUNCTION & ABSTRACT CLASS & PURE VIRTUAL FUNCTION
+
+1.Write a C++ program that contain two classes named as Account1 and Account2, representing two bank accounts. Use a friend function name as  transferAmount(), that allows you to transfer funds between these accounts and update their balances.
+
+2. Program to demonstrate Abstract class and Pure virtual function.
+Solution:
+#include <iostream>
+
+class Base {
+public:
+    virtual void show() = 0; // Pure Virtual Function
+};
+
+class Derived : public Base {
+public:
+    void show() {
+        std::cout << "Implementation of Virtual Function in Derived class" << std::endl;
+    }
+};
+
+int main() {
+    // Base obj; // This line should be commented out since Base is an abstract class.
+
+    Base *b;
+    Derived d;
+    b = &d;
+    b->show(); // Calls the show() function of the Derived class.
+   
+    return 0;
+}
+
+==========================================================================================================================================
+LAB 10------------------TEMPLATE FUNCTION
+
+Write a C++ program that defines a template function findMax to
+find the maximum of two values of any data type. Additionally,
+create a template specialization for the char data type to find the
+maximum character in a case-insensitive manner. In the main
+function, demonstrate the use of the findMax function with the
+following test cases:
+ i) Find the maximum of two integers.
+ Ii) Find the maximum of two doubles. 
+iIi) Find the maximum of two characters while ignoring case
+sensitivity.
+
+==========================================================================================================================================
+LAB 11------------------FILE OPERATIONS
+
+Write a CPP Program to Read and Write Student details into a file.
+
+==========================================================================================================================================
+LAB 12------------------EXCEPTION HANDLING 
+
+Write a CPP Program to Read and Write Student details into a file.
+
