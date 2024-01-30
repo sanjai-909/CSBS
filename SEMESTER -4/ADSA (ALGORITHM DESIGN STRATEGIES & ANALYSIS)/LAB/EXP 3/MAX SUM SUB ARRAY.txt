@@ -1,0 +1,152 @@
+int main()
+{
+    int i,j,t;
+
+    cout<<showpoint<<setprecision(12);
+
+    ofstream outf;
+    ifstream inf;
+
+    int n;
+    int *a;
+   
+    cout<<"\nEnter n:";
+    cin>>n;
+    //int a[n];
+   
+    a = new int [n];
+
+   
+    //Loading numbers to input file
+    outf.open("in.txt");
+    srand((long int)clock());
+    for(int i=0;i<n;i++)
+    {
+        outf<<"\t"<<rand()%n;
+    }
+    outf.close();
+   
+
+   
+    //Analysis of Insertion Sort
+    cout<<"\n\nAnalysis of Insertion Sort\n";
+    cout<<setfill('-')<<setw(80)<<"-";
+    //Reading input in array from input file
+    inf.open("in.txt");        
+    for(int i=0;i<n;i++)
+    {
+        inf>>a[i];
+    }
+    inf.close();
+   
+    //Insertion Sort - Unordered Array
+    //The array contains random elements
+
+    count = 0;
+    InsertionSort(a,n);
+    //Writing sorted numbers to output file
+    outf.open("InsertOut1.txt");
+    for(int i=0;i<n;i++)
+    {
+        outf<<"\t"<<a[i];
+    }
+    outf.close();    
+    cout<<"\nInsertion Sort - No. of Operations - Random Order: "<<count;
+
+    //Insertion Sort - Sorted Array (Ascending)
+    //Now the array a contains numbers in ascending order
+   
+    count = 0;
+    InsertionSort(a,n);
+    //Writing sorted numbers to output file
+    outf.open("InsertOut2.txt");
+    for(int i=0;i<n;i++)
+    {
+        outf<<"\t"<<a[i];
+    }
+    outf.close();
+    cout<<"\nInsertion Sort - No. of Operations - Sorted Array (Ascending): "<<count;
+
+    //Insertion Sort - Sorted Array (Descending)
+
+    //Reverse the content of a
+    for(i=0,j=n-1;i<j;i++,j--)
+    {
+        t = a[i];     a[i] = a[j];     a[j] = t;
+    }
+   
+    //Now the array a contains numbers in descending order    
+    count = 0;
+    InsertionSort(a,n);
+    //Writing sorted numbers to output file
+    outf.open("InsertOut3.txt");
+    for(int i=0;i<n;i++)
+    {
+        outf<<"\t"<<a[i];
+    }
+    outf.close();
+    cout<<"\nInsertion Sort - No. of Operations - Sorted Array (Descending): "<<count;
+
+
+    //Analysis of Merge Sort
+    cout<<"\n\nAnalysis of Merge Sort\n";
+    cout<<setfill('-')<<setw(80)<<"-";
+    //Reading input in array from input file
+       
+    inf.open("in.txt");        
+    for(int i=0;i<n;i++)
+    {
+        inf>>a[i];
+    }
+    inf.close();
+   
+    //Merge Sort - Unordered Array
+    //The array contains random elements
+
+    count = 0;
+    MergeSort(a,0,n-1);
+    //Writing sorted numbers to output file
+    outf.open("MergeOut1.txt");
+    for(int i=0;i<n;i++)
+    {
+        outf<<"\t"<<a[i];
+    }
+    outf.close();    
+    cout<<"\nMerge Sort - No. of Operations - Random Order: "<<count;
+
+    //Merge Sort - Sorted Array (Ascending)
+    //Now the array a contains numbers in ascending order
+   
+    count = 0;
+    MergeSort(a,0,n-1);
+    //Writing sorted numbers to output file
+    outf.open("MergeOut2.txt");
+    for(int i=0;i<n;i++)
+    {
+        outf<<"\t"<<a[i];
+    }
+    outf.close();
+    cout<<"\nMerge Sort - No. of Operations - Sorted Array (Ascending): "<<count;
+
+    //Merge Sort - Sorted Array (Descending)
+
+    //Reverse the content of a
+    for(i=0,j=n-1;i<j;i++,j--)
+    {
+        t = a[i];     a[i] = a[j];     a[j] = t;
+    }
+   
+    //Now the array a contains numbers in descending order    
+    count = 0;
+    MergeSort(a,0,n-1);
+    //Writing sorted numbers to output file
+    outf.open("MergeOut3.txt");
+    for(int i=0;i<n;i++)
+    {
+        outf<<"\t"<<a[i];
+    }
+    outf.close();
+    cout<<"\nMerge Sort - No. of Operations - Sorted Array (Descending): "<<count;
+
+    delete(a);
+}

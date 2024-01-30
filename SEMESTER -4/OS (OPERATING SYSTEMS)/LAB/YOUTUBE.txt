@@ -1,0 +1,252 @@
+
+#include <stdio.h>
+#include<unistd.h>
+
+int main() {
+    
+    int id=fork();
+   int n;
+   
+   if(!id){
+       n=1;
+   }else{
+       n=6;
+   }
+   
+   for(int i=n;i<n+5;i++){
+       printf("%d ",i);
+       fflush(stdout);
+   }
+   printf("\n");
+    return 0;
+}
+
+----------------------------without wait function---------------------------------------
+
+#include <stdio.h>
+#include<unistd.h>
+
+int main() {
+    
+    int id=fork();
+   int n;
+   
+   if(!id){
+       n=1;
+   }else{
+       n=6;
+   }
+   
+   if(id){
+       wait();
+   }
+   
+   for(int i=n;i<n+5;i++){
+       printf("%d ",i);
+       fflush(stdout);
+   }
+   printf("\n");
+    return 0;
+}
+
+---------------------------wait function--------------------------------------------
+#include <stdio.h>
+#include<unistd.h>
+
+int main() {
+    
+    int id=fork();
+   int n;
+   
+   if(!id){
+       n=1;
+   }else{
+       n=6;
+   }
+   
+   if(id){
+       wait();
+   }
+   
+   for(int i=n;i<n+5;i++){
+       printf("%d ",i);
+       fflush(stdout);
+   }
+   if(id){
+         printf("\n");
+   }
+    return 0;
+}
+-------------------------calling fork multiple times--------------------------------------
+
+
+
+#include <stdio.h>
+#include<unistd.h>
+#include<stdlib.h>
+#include<string.h>
+#include<errno.h>
+
+int main() {
+   
+   int id1=fork();
+   int id2=fork();
+
+   if(id1==0){
+       if(id2==0){
+           printf("Process Y\n");
+       }
+       else{
+           printf("Process X\n");
+       }
+   }else{
+       if(id2==0){
+           printf("Process Z\n");
+       }
+       else{
+           printf("Parent Process\n");
+       }
+   }
+   
+   while(wait(NULL)!=-1 || errno != ECHILD){
+       printf("waiting for child Process to complete\n");
+   }
+   
+   
+}
+----------------------parent ans process id------------------------------------------
+
+#include <stdio.h>
+#include<unistd.h>
+
+int main() {
+    
+    int id=fork();
+    
+    printf("current process id %d,parent id %d\n",getpid(),getppid());
+    return 0;
+}
+-----------------------------orphan process-----------------------------------------------
+
+
+#include <stdio.h>
+#include<unistd.h>
+
+int main() {
+    
+    int id=fork();
+    
+    if(id==0){
+        sleep(2);
+    }
+    
+    printf("current process id %d,parent id %d\n",getpid(),getppid());
+    return 0;
+}
+
+----------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+int main() {
+    pid_t child_pid;
+
+    // Create a child process
+    child_pid = fork();
+
+    if (child_pid == -1) {
+        perror("fork");
+        exit(EXIT_FAILURE);
+    }
+
+    if (child_pid > 0) {
+        // Parent process
+        printf("Parent process (PID: %d) is going to sleep for 2 seconds\n", getpid());
+
+        // Introduce a delay in the parent process
+        sleep(2);
+        
+
+        // The parent process terminates here
+        printf("Parent process (PID: %d) is terminating\n", getpid());
+        exit(EXIT_SUCCESS);
+    } else if (child_pid == 0) {
+        // Child process
+        printf("Child process (PID: %d) is now an orphan\n", getpid());
+
+        // The child process continues its execution
+        while (1) {
+            // Do some work in the orphan process
+            sleep(1);
+        }
+    }
+
+    return 0;
+}
+------------------------------zombie process----------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main() {
+    pid_t child_pid;
+
+    // Create a child process
+    child_pid = fork();
+
+    if (child_pid == -1) {
+        perror("fork");
+        exit(EXIT_FAILURE);
+    }
+
+    if (child_pid > 0) {
+        // Parent process
+        printf("Parent process (PID: %d) is sleeping for 5 seconds\n", getpid());
+
+        // Introduce a delay to give the child process time to become a zombie
+        sleep(5);
+
+        // The parent process does not wait for the child, creating a zombie process
+        printf("Parent process (PID: %d) is terminating without waiting for the child\n", getpid());
+        exit(EXIT_SUCCESS);
+    } else if (child_pid == 0) {
+        // Child process
+        printf("Child process (PID: %d) is terminating\n", getpid());
+        exit(EXIT_SUCCESS);
+    }
+
+    return 0;
+}
+/*In this program, the parent process forks a child process, and the parent introduces a delay using sleep(5). During this time, the child process terminates without the parent collecting its exit status. As a result, the child becomes a zombie process until the parent exits. The output will show the parent process terminating without waiting for the child, leaving the child process as a zombie.*/
+
+
+----------------------how to the child process is completed ---------------------------------------------------------
+//this concept is usefull if you are working with multiple fork
+#include<stdio.h>
+#include<stdlib.h>
+#include<sys/wait.h>
+#include<sys/types.h>
+#include<unistd.h>
+
+int main(int argc,char * argv[]){
+    
+    int id=fork();
+    
+    if(id==0){
+        sleep(2);
+    }
+    printf("current Process ID %d,Parent Process ID %d\n",getpid(),getppid());
+    
+    int result=wait(NULL);
+    
+    if(result == -1){
+        printf("No children to wait\n");
+    }else{
+        printf("%d finished execution \n",result);
+    }
+}
+--------------------------------------------------------------
