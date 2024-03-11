@@ -38,7 +38,7 @@ objects and one that is not initialized.
         r.hours=t1.hours+t2.hours;
 
         if(r.seconds>=60){
-            r.seconds-=60;
+            r.seconds -=60;
             r.minutes++;
         }
         if(r.minutes>=60){

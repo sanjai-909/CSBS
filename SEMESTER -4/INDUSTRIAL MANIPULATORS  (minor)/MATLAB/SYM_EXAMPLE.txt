@@ -1,0 +1,12 @@
+This is the sample matlab file for symbolic computation. Pl make the DH table for COBOT and make 0T1,...., 5T6 matrices in symbolic form in matlab as it is done here. And then multiply them to get 0T6. Substitute values of theta 1 to 6 to get the values of 0T6.
+
+
+
+syms th1; 
+syms th2;
+m1=[cos(th1) -sin(th1) 0; sin(th1) cos(th1) 0; 0 0 1];
+m2=[cos(th2) -sin(th2) 0; sin(th2) cos(th2) 0; 0 0 1];
+m=m1*m2
+th1=pi/2;
+th2=pi/2;
+subs(m)

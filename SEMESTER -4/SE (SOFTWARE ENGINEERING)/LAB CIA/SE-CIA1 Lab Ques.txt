@@ -1,0 +1,20 @@
+1. Develop SRS vision document, use case document,traceability matrix 
+for a "Restaurant Management System using AI-Bot" with 
+atleast 5 feature requirements, 5 use case requirements, 5 stakeholders requirements, 5 new glossary terms,
+5 special requirements. 
+
+2. Identify set of use cases of ""Online Event Management system"", the events are Interview,conference,
+Birthday, Bethodral, Marriage based upon the arrival of invitees. The system
+will felicitate arrangement of seating on required date, food, incoming and outgoing person's foot prints using camera, Number of visitors on board. Draw use case diagrams using primary,secondary, off-stage actors and activity diagrams of the given scenes.
+
+3. Generate sequence diagram,collaboration diagram of "Online cricket score board of 20-20 match" with atleast 2 cricket teams, 2 umpires,10 batsmen, 5 bowlers which replay zoom out and zoom in scenario of each wickets and finaly end up with winner status.
+
+4. Build a sample code from the class diagram of "Hospital Management System" with atleast 5 classes, 10 subclasses, 5 interfaces and 1 package. Perform reverse engineering by adding a new class called as ambulance108, attributes are vehicle_no_On_plate, Location, driverName,No_of_cases and methods are void getData(), void printData(), void countCases().
+
+5. Develop a C code to perform pure coverage for the cases of "SASTRA Point of Sale(POS)" as the user required the following product items by its price and qty atlast generate digital bill to the end user:
+Get number of items from the users and find total amount to be paid for the following:
+case 'd':  "dairy products: 1. 150g milk sweet is 50rs, 2. 200g paneer is 80rs, 3. 100g ghee is 40rs, 4. 500 ml milk is 25rs" 
+case 't': "Tommoto products: 1. Tomoto ketchup 1 bottle: 80rs, 2. tomotto pickle 1 bottle: 40rs, 3. tomoto puree 1 bottle: 50 rs, 4. tomotto jam 1 bottle: 45rs"
+case 'c': "Coconut products: 1. coconut powder pkt1: 15rs, 2. coconut milk 1 tetra pkt: 20rs, 3. coconut oil 100ml:10rs"
+Develop sample C++ code to find memory leak of two object's dynamic memory allocation with constructor and destructor to handle the memory leak using rational purify and find performance of the code using quantify.
+

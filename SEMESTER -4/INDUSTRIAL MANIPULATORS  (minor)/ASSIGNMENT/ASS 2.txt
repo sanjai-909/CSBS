@@ -1,0 +1,5 @@
+APPLICATION OF TRANSFORMATION MATRIX
+
+Take an image of a flower first character of whose begins with the initial of your name. Rotate it, translate it using transformation matrix. You cannot use any inbuilt function. For example, in matlab, there is an inbuilt function called 'imrotate' to rotate the image. So you cannot use such inbuilt commands. Rotate all the pixel coordinates, then the image will be rotated.
+
+This is an individual project and I will verify it in the class on your laptop. However, you must submit it in the GCR.

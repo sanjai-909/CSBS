@@ -1,0 +1,26 @@
+This is the matlab code for forward kinematics. Pl run it in your laptop. See the results. You may have to install Symbolic math Toolbox to run the program if it is not earlier installed. 
+
+Today we will go to TDC for the class. We will have the practical demo of the things (if TDC is free).
+
+
+syms th1 th2 th3 th4 th5 th6 L1 L2 L3 L4
+T1=[cos(th1) 0 sin(th1) 0;sin(th1) 0 -cos(th1) 0; 0 1 0 L1; 0 0 0 1];
+T2=[-sin(th2) -cos(th2) 0 -L2*sin(th2); cos(th2) -sin(th2) 0 L2*cos(th2); 0 0 1 0;0 0 0 1];
+T3=[sin(th3) 0 cos(th3) 0; -cos(th3) 0 sin(th3) 0; 0 -1 0 0; 0 0 0 1];
+T4=[cos(th4) 0 sin(th4) 0;sin(th4) 0 -cos(th4) 0; 0 1 0 L3; 0 0 0 1];
+T5=[cos(th5) 0 -sin(th5) 0;sin(th5) 0 cos(th5) 0; 0 -1 0 0; 0 0 0 1];
+T6=[cos(th6) -sin(th6) 0 0; sin(th6) cos(th6) 0 0; 0 0 1 L4; 0 0 0 1];
+
+TFinal= T1*T2*T3*T4*T5*T6
+
+th1=0;
+th2=pi/2;
+th3=0;
+th4=0;
+th5=0;
+th6=0;
+% L1=155; 
+% L2=409; 
+% L3=367; 
+% L4=124;
+subs(TFinal)

@@ -15,7 +15,7 @@ class COUNT{
   }
   
   int getcount(){
-   return count;
+   return count++;
   }
   };
   int COUNT::count=0;
