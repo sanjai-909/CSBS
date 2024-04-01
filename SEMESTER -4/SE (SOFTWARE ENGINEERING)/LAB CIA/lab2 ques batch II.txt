@@ -1,0 +1,36 @@
+CSE218, Software Engineering Lab Test2
+================================
+1. Develop "Online Blood Bank System" with the following details for atleat 5 Volunteers, the system should do CRUD operations by given user's new data.
+
+Donar Name:
+D-O-B:
+Blood Group:
+Previous Donation on:
+Address/City:
+Email:
+Ph. No.:
+Alchaholic: Yes/No
+
+Perform automatic testing and manual testing of the above application to check all input boxes.
+and 
+Draw activity diagram to check whether the candidate is eligible to donate their blood or not by checking the age>16 and last donation date not less than 3 months and non-alchaholic.
+
+2.  A scientist created a bot called as jimmy-yantra to assist him for the following activities: 
+a. summarizing the daily news at early morning and dictating to him as short notes
+b. dismandling the power-off bots and reset after checking power recharge
+c. preparing a schedule with consultanty for conducting a review meeting
+d. Identifying a perfect tissue from testing rats to make a clone
+c. Making a daily report of scientist progress and productivity rate with completed task list
+Develop sequence and collaboration diagram of the above AI system and perform Unit testing with manual scripts.
+
+3. Design a "smart AC"  that will have different sensors to check humidity (0.1-1.0), temperature(0.1-1.0), Internal Gas level (1,2,3) to maintain the cooling level based on the outside climate condition
+by adding above input values, and find average value is not more than 5.
+Perform black box  testing using alpha numeric verification points of above the conditions.
+and draw use case diagram.
+
+4. Build "ONLINE LIBRARY MANAGEMENT SYSTEM" consist of 
+"eBookDB" for UG_Ebook, PG_Ebook, PhD_Ebook, Diploma_Ebook courses and
+"MagazineDB"  for economics_magazine, computer_magazine, biology_magazine, physics_magazine,maths_magazine and
+"JournalsDB" for quarterly_Journal, Annual_Journal, bi_monthly_Journal
+It allows to viewList(), read() all available articles and requires subscription() to download().
+Develop class diagram and design a GUI to perform object verification testing for download button.

@@ -1,0 +1,32 @@
+1. Develop "resume Analyzer" with the following details for atleat 5 applicants, the system should do CRUD operations by given user's new data.
+
+Name:
+DoB:
+Qualification: UG/PG/PhD
+Skill set:
+Email:
+Ph. No.:
+
+Perform automatic testing and manual testing of the above application to check all input boxes.
+and 
+Draw swimlane diagram to print if the candidate is UG posting to "Local Branch" or PG posting to "zonal office" or Ph.D posting to "Main office"
+
+2. Draw sequence diagram to "Rhyme App" that will translate the required English rhyme into Natural Language(NL) using NLProcessor on Google Translator and finally stored under googleDrive to hear the same Kinder Garden students song using AI. and develop collaboration diagram of the same.
+
+Develop POS (point of sale) system to display digital bill of all purchased items with additional tax 2% on each item and total payable amount. Perform purify, pure coverage test on below scenarios.
+a. User login using Ph.No, OTP
+b. User picked necessary items from online grocessary shop, then make an order
+c. system will prepare digital bill automatically by using priceDB of all items.
+d. User will make payment on COD/UPI/Netbanking.
+e. System will send the delivery date of the goods as SMS to the user
+f. user will track the order then logoff.
+
+3. Design a smart fridge that will have different sensors to check humidity (0.1-1.0), temperature(0.1-1.0), light of the fridge(0 or 1) to display the condition of the fruits either it is in "good" condition or move on to "expiry" condition after finding the above total threshold value is in between 2 to 3 then "Good" or "expiry".
+perform black box  testing using alpha numeric verification points of above the conditions.
+and draw activity diagram of the the above scenarios.
+
+4. Build "smart oven" system that have multi cusine stored receipies programs(South Indian, North Indian, Italian, Japanese, Chinese...), while the user press the required item1...itemN number of option list, it will automatically display the receipie steps, ingrediants and its necessary quantity on screen. The user will load the adaquate items on the oven bowl, then press the ON button again. The smart system will sense and display the time taken of preparing food and deliver the delicious food with alarm sound after some time.
+
+Develop class diagram of the above scenario with necesary interfaces. 
+Perform manual and automated testing of the above system.
+
