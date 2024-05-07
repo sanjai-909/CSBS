@@ -1,0 +1,1 @@
+    [test,info]=importrobot('minor_model_2dof')

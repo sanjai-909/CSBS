@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<unistd.h>
+#include<stdlib.h>
+
+
+int main(){
+    
+    int fd[2];
+    
+    pipe(fd);
+    
+    int id=fork();
+    
+    if(id==-1){
+        perror("ERROR IN FORK\n");
+        exit(EXIT_FAILURE);
+    }
+    
+    if(id){
+        close(fd[0]);
+        char string[100];
+        
+        printf("ENTER A STRING FROM PARENT : ");
+        scanf("%[^\n]",&string);
+        
+        write(fd[1],&string,sizeof(string));
+        close(fd[1]);
+        
+        wait(NULL);
+        
+        exit(EXIT_SUCCESS);
+    }
+    else{
+        close(fd[1]);
+        
+        char message_from_parent[100];
+        read(fd[0],message_from_parent,sizeof(message_from_parent));
+        close(fd[0]);
+        
+        printf("message from parent -> %s",message_from_parent);
+        
+        exit(EXIT_SUCCESS);
+    }
+    
+    
+}

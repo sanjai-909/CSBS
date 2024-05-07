@@ -1,0 +1,5 @@
+1)Write c program for ipc communication between two different process like
+Server process and client process
+Using  pipe
+
+2)cpu scheduling non-preemptive SJF

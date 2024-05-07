@@ -1,0 +1,71 @@
+#include<stdio.h>
+#include<unistd.h>
+#include<stdlib.h>
+
+
+int main(){
+    //communication b/w siblings
+    
+    int fd[2];
+    int PIPE= pipe(fd);
+    
+    if(PIPE == -1){
+        perror("ERROR IN CREATION OF PIPE\n");
+        exit(EXIT_FAILURE);
+    }
+    
+    int id1=fork();
+   
+    
+    if(id1 == -1){
+        printf("ERROR IN FORK\n");
+        exit(EXIT_FAILURE);
+    }
+    
+    //child 1
+    if(id1){
+        int id2=fork();
+         
+        if(id2 == -1){
+         printf("ERROR IN FORK\n");
+         exit(EXIT_FAILURE);
+        }
+        
+        if(!id2){
+            
+            close(fd[0]);
+            
+            char message[100];
+            printf("ENTER A MESSAGE FROM SIBLING 1 - 2: ");
+            scanf("%[^\n]",&message);
+            
+            write(fd[1],&message,sizeof(message));
+            close(fd[1]);
+           
+            
+          
+            exit(EXIT_SUCCESS);
+        }
+
+	wait(NULL);
+       
+    }
+    //child 2
+    else{
+            
+            close(fd[1]);
+            
+            char message[100];
+            
+            read(fd[0],message,sizeof(message));
+            close(fd[0]);
+            
+            printf("MESSAGE FROM THE SIBLING -> %s",message);
+            
+            exit(EXIT_SUCCESS);
+        
+    }
+
+return 0;
+    
+}
