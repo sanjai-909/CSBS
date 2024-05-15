@@ -1,5 +1,5 @@
-lam=20
-mu=11
+lam=12/60
+mu=1/6
 s=2
 
 rho=lam/(s*mu)

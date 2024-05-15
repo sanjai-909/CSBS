@@ -1,8 +1,10 @@
 library(lpSolve)
-obj=c(3,-1)
-mat=matrix(c(2,1,1,3,0,1),nrow=3,byrow=TRUE)
-cons=c(">=","<=","<=")
-rhs<- c(2,2,4)
+obj=c(10,15)
+mat=matrix(c(2,1,
+           2,4,
+           -1,1),nrow=3,byrow=TRUE)
+cons=c("<=","<=","<=")
+rhs<- c(26,56,5)
 
 A_var = ncol(mat)
 

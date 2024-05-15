@@ -65,11 +65,11 @@ using namespace std;
   };
 int main(){
 	
-  //int a[]={3,-5,8,-4,2,-6,2,9,-2,1}; // ans -11
+  int a[]={3,-5,8,-4,2,-6,2,9,-2,1}; // ans -11
   
   //int a[]={-1,3,-2,5}; //ans -> 6
   
-  int a[] ={2,3,4,5,7}; //ans ->21
+  //int a[] ={2,3,4,5,7}; //ans ->21
   int n=sizeof(a)/sizeof(a[0]);
   
   int result= max::MSADC(a,0,n-1);
