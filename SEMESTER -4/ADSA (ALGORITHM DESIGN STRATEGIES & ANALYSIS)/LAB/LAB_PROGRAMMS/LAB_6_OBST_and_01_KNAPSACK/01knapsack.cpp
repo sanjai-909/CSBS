@@ -52,9 +52,13 @@ void knapsack(int w[],int p[],int c,int n){
 
 int main(int argc, char** argv){
 
-    int weight[]={3,4,6,5};
-    int profit[]={2,3,4,4};
-    int c=8;//bag capacity
+    //int weight[]={3,4,6,5};
+   // int profit[]={2,3,4,4};
+    //int c=8;//bag capacity
+    int weight[]={4,2,3,1,6,7};
+    int profit[]={6,4,5,3,9,7};
+    int c=10;
+
     int n=sizeof(weight)/sizeof(weight[0]); 
 
     for(int i=0;i<n-1;i++){

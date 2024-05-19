@@ -53,21 +53,17 @@ namespace TravellingSalespersonProblem{
 int main(){
 
 
-  int cost[][maxsize]={ {INT_MAX,20,30,10,11},
-                 {15,INT_MAX,16,4,2},
-                 {3,5,INT_MAX,2,4},
-                 {19,6,18,INT_MAX,3},
-                 {16,4,7,16,INT_MAX}
+ int cost[][maxsize]={ {INT_MAX,5,13,8},
+                 {6,INT_MAX,INT_MAX,19},
+                 {12,INT_MAX,INT_MAX,7},
+                 {11,3,4,INT_MAX}
                  };
- 
- 
+
  int n=sizeof(cost)/sizeof(cost[0]);
  
- int S;
- cout<<"Enter the Starting Vertex : ";
- cin>>S;
+
  
- cout<<"THE MINIMUM COST OF TRAVELLING FROM THR INDEX "<< S<< " IS "<<TravellingSalespersonProblem::TSP(cost,n,S);
+ cout<<"THE MINIMUM COST OF TRAVELLING  "<<TravellingSalespersonProblem::TSP(cost,n,0);
 
   
 }
