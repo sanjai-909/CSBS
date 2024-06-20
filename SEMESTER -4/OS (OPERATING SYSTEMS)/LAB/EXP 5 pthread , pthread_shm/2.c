@@ -17,7 +17,7 @@ pthread_mutex_t mutex;
 
 void* WRITER(){
 
-  key_t key=ftok("shmfile",67);
+key_t key=ftok("shmfile",67);
  int shmid=shmget(key, 1024, 0666 | IPC_CREAT);
  
   pthread_mutex_lock(&mutex);
