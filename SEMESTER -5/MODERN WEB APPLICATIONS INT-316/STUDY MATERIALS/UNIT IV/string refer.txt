@@ -1,0 +1,39 @@
+Function	Description
+chop()		Removes whitespace or other characters from the right end of a string
+chunk_split()	Splits a string into a series of smaller parts
+echo()	Outputs one or more strings
+explode()	Breaks a string into an array
+implode()	Returns a string from the elements of an array
+join()		Alias of implode()
+lcfirst()	Converts the first character of a string to lowercase
+ltrim()	Removes whitespace or other characters from the left side of a string
+print()		Outputs one or more strings
+printf()	Outputs a formatted string
+rtrim()	Removes whitespace or other characters from the right side of a string
+similar_text()	Calculates the similarity between two strings
+soundex()	Calculates the soundex key of a string
+sprintf()	Writes a formatted string to a variable
+sscanf()	Parses input from a string according to a format
+str_repeat()	Repeats a string a specified number of times
+str_replace()	Replaces some characters in a string (case-sensitive)
+str_shuffle()	Randomly shuffles all characters in a string
+str_split()	Splits a string into an array
+str_word_count()	Count the number of words in a string
+strchr()	Finds the first occurrence of a string inside another string (alias of strstr())
+strcmp()	Compares two strings (case-sensitive)
+strip_tags()	Strips HTML and PHP tags from a string
+stripslashes()	Unquotes a string quoted with addslashes()
+strlen()	Returns the length of a string
+strnatcmp()	Compares two strings using a "natural order" algorithm (case-sensitive)
+strpos()	Returns the position of the first occurrence of a string inside another string (case-sensitive)
+strrchr()	Finds the last occurrence of a string inside another string
+strrev()	Reverses a string
+strstr()	Finds the first occurrence of a string inside another string (case-sensitive)
+strtok()	Splits a string into smaller strings
+strtolower()	Converts a string to lowercase letters
+strtoupper()	Converts a string to uppercase letters
+strtr()		Translates certain characters in a string
+substr()	Returns a part of a string
+trim()	Removes whitespace or other characters from both sides of a string
+ucfirst()	Converts the first character of a string to uppercase
+ucwords()	Converts the first character of each word in a string to uppercase

@@ -1,0 +1,65 @@
+<html>
+	<head>
+	<title>Table Example</title>
+<style>
+	table{
+		border-collapse:collapse;
+	}
+	table,td{
+		border:2px solid green;
+
+	}
+
+	td{
+		padding:10px;
+		font-size:16pt;
+
+	}
+
+	input,option,select{
+
+		font-size:16pt;
+	}
+</style>
+
+</head>
+<body>
+<center>
+<h1>Book Store</h1>
+
+<table>
+
+<form method="post" action="addbook.php">
+
+<tr>
+	<td><label>Book Id</label></td>
+	<td><input  type="text" name="bookid" length="20" maxlength="20"/></td>
+</tr>
+<tr>
+	<td><label>Book Title</label></td>
+	<td><input  type="text" name="title" length="20" maxlength="20"/></td>
+</tr>
+<tr>
+	<td><label>Author Name</label></td>
+	<td><input  type="text" name="author" length="20" maxlength="20"/></td>
+</tr>
+<tr>
+	<td><label>Cost</label></td>
+	<td><input  type="text" name="cost" length="20" maxlength="10"/></td>
+</tr>
+<tr>
+	<td><label>Available</label></td>
+	<td><input type="radio" name="available" value="Y"/>Yes
+		<input type="radio" name="available" value="N"/>No</td>
+</tr>
+
+<tr>
+	<td  colspan="2" align="center"><input type="reset" value="Clear"/>
+		<input type="submit" value="submit"/></td>
+</tr>
+</form>
+</table>
+
+</center>
+<h3><a href='bookhome.html'>Home Page</a></h3>
+</body>

@@ -1,0 +1,14 @@
+Develop a web application to maintain the vehicle service history for ABC Vehicle Service company.
+The application should have login facility for admin and customers.
+
+Admin must be able to add a new vehicle details(regnumber, make, model, custname, contactno, custid) and
+add service details(regnumber, description, date, cost).
+
+The customer must be able to login and check all servie details done for his vehicle.
+
+Create respective tables and pages.
+
+Use $_SESSION[] array to store customer name, customer id and role after successful login.
+Use this information in all pages for authentication purpose.
+
+Invalid access to any page must be forwarded to login page with error message "Login required to access the page".

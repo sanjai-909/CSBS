@@ -1,0 +1,21 @@
+Function	Description
+checkdate()	Validates a Gregorian date
+date_add()	Adds days, months, years, hours, minutes, and seconds to a date
+date_create()	Returns a new DateTime object
+date_diff()	Returns the difference between two dates
+date_format()	Returns a date formatted according to a specified format
+date_parse()	Returns an associative array with detailed info about a specified date
+date_sub()	Subtracts days, months, years, hours, minutes, and seconds from a date
+date_time_set()	Sets the time
+date()		Formats a local date and time
+getdate()	Returns date/time information of a timestamp or the current local date/time
+gettimeofday()	Returns the current time
+localtime()	Returns the local time
+mktime()	Returns the Unix timestamp for a date
+strftime()	Formats a local time and/or date according to locale settings
+strptime()	Parses a time/date generated with strftime()
+
+time()	Returns the current time as a Unix timestamp
+============================================================================
+strtotime()	Parses an English textual datetime into a Unix timestamp
+============================================================================
