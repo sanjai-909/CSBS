@@ -1,0 +1,24 @@
+  <!DOCTYPE html>  <!--documet type declaration-->
+  <html>
+    <head>
+        <title>sanjai</title>
+    </head>
+    <body>
+        <h1> Hi I am SANJAI</h1>
+        <br><!--it used to generate new line--><!--it is self closing tag-->
+        <hr>
+        <hr> <!--used to create a horizontal line--> <!--it is self closing tag-->
+        <img src="images/sanjai 0.jpg"
+        height="250px" width="200px" alt="This is image of me(sanjai)"> <!--it is self closing tag-->
+        <p> I am a software devloper </p>
+        <p>I love Data Structures and Algorithms</p>
+        <pre> 
+I love c++ and JAVA
+because, I was learned the both as my own wish
+        </pre>
+
+        <h3>check my github</h3>
+        <a href="https://github.com/sanjai-909">github.com</a> <!-- href  is used to provide link which is attribute of the a tag-->
+
+    </body>
+  </html>

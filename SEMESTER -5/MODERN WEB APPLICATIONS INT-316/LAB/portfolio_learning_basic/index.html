@@ -1,0 +1,316 @@
+<!DOCTYPE html>  <!--documet type declaration-->
+  <html>
+    <head>
+        <title>sanjai</title>
+        <!--how to set favicon-->
+        <link rel="icon" type="image/x-icon" href="images/sanjai 0.jpg">
+    </head>
+    <body style="background-color:aliceblue;">
+
+        <!-- marquee tag is used for scrolling animation in html-->
+        <marquee behavior="alternate" direction="right" bgcolor="yellow" 
+        height="100px" width="400px" scrollamount="15" scrolldelay="1" loop="5"><h3>Hello world</h3></marquee>
+
+        
+        <marquee behavior="scroll" direction="right" scrollamount="20"><img style="display: block;" width="100px" src="images/bird-wings-flying-feature.webp" alt="bird gif"></marquee>
+        <!--direction => 
+         defualt=>left ,
+          right,
+          up, 
+          down-->
+        <!--3 behaviours for maequee,
+            default => scroll //scrolls continuously
+            alternate =>it bounces left and right
+            slide => scrolls in one direction and stops at the end of the opposite direction.
+            -->
+        <!--scrollamount is ussed to increase and decrease the scrolling speed of the marquee tag-->
+        <!--scrolldelay is used to delay the scrolling speed-->
+        <!--loop is used for looping the content for n times , after the n times it goes to the rest position (niot moving)
+        eventhough if we use alternate, it loops only n times-->
+        <!--bgcolor is used for give the backgrpound colour to the marquee tag-->
+        
+
+        <h1 style="color:blueviolet; font-family:Verdana, Geneva, Tahoma, sans-serif; 
+        text-align: center; "> Hi I am SANJAI</h1>
+        <br><!--it used to generate new line--><!--it is self closing tag-->
+        <hr>
+        <hr> <!--used to create a horizontal line--> <!--it is self closing tag-->
+
+        <!--center tag is used to put everything in center
+
+        lorem100 to create a random 100 words
+        -->
+        <center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione odit nobis quas illum a laboriosam voluptas aspernatur dolor quod aliquam accusantium, aperiam, ab quasi! Iusto ab perferendis sed unde fuga, doloremque assumenda nisi eligendi earum. Aut architecto obcaecati expedita modi veniam nisi voluptate eum ipsam dignissimos, ad voluptatum vitae.</center>
+
+        <a href="https://www.instagram.com/sanjaiiiiiiiiii/" target="_blank"><img src="images/sanjai 0.jpg"
+        height="250px" width="200px" alt="This is image of me(sanjai)"
+        style="border: 3px dashed yellowgreen;" id="img"
+        title='SANJAI "(jai)"'></a> <!--we have solid , dotted, dashed--><!--it is self closing tag-->
+        <p style="font-size:25px;"> I am a <i>software devloper </i> at <em>Microsoft</em></p> <!--i tag is used for italics we can use em tag emphasized tag it was empahsized by SE-->
+        <b>I know </b><strong> DEVops</strong> <!--b tag use to bold the text ;stong tag use to bold as well as give important to that text and attracted by SE-->
+        <p>I love Data Structures and Algorithms</p><!--it neglects the whitespaces-->
+        <pre> 
+I love <mark><small>c++</small> and <small>JAVA</small></mark> <!--mark tag is use to highlight the text-->
+because, I was learned the both as my own wish
+        </pre><!--pre tag accpets as it is what you are writing includes the white spaces also-->
+        <!--small tag is used to small the text-->
+        <h3>check my github</h3>
+        <a href="https://github.com/sanjai-909">github.com</a><br><br> <!-- href  is used to provide link which is attribute of the a tag-->
+        <a href="https://github.com/sanjai-909" target="_blank">
+            <img src="images/png.jpg" width="15px"> my github page</a> <!--target tag is used to load the link in separate webpage-->
+        
+        <br>
+        <a href="mailto:sanjaisk83@gmail.com">say hi to me</a><!--mailto attribute is used to redirect the user to their respcetive mail editor-->
+        <br>
+        <img src="../portfolio_learning_basic/images/sanjai 0.jpg" alt="Square to Circle" style="border-radius: 50%; height: 200px;width: 200px; object-fit:cover">
+        <br>
+        <!--border radius is used to convet the square image to circlular image-->
+        <br>
+        <h3 style="font-family: serif;"> MY BUCKET  LIST </h3>
+        <del> get more than 9 cgpa</del>
+        <br>
+        <del> focus on your self</del>
+        <br>
+        <ins>Explore you favourite places with you favourite one</ins>
+
+        <p> (a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+        <p> sanjai<sub>kumar</sub></sup></p>
+        <!--sup tag for supscript ;sub tag for superscript-->
+        <q>I AM <abbr title="COMPUTER SCIENCE AND BUSINESS SYSTEMS">CSBS</abbr> student</q> <!-- q tag for double quotes-->
+            <!--abbr tag used for abbrevation purposes-->
+
+        <s> i am so good boy</s>
+        <!-- strike tag used for stinking the contents-->
+         <u> i am good boy</u>
+         <!--u tag is underline tag-->
+        <tt> hello world</tt>
+        <!--tt tag is used for teletype text-->
+        <font face="arial" size="3" color="red"><p> my name is sanjai</p></font>
+        <!--in HTML5 font size range is 1 to 10-->
+        <!--face = arial / roboto-->
+        <!--font tag is used to change the font of the text-->
+
+            <!--table and lists-->
+            <br>
+            <br>
+            <!--<table style="width: 50%;" border="2px dashed">-->
+
+            <!--cellspacing and cellpadding is the additional attribbutes of the table
+                cellspacing give space b/w each cells of the table
+                cellpadding give space b/w each text inside the cell-->
+            <div style="background-color: burlywood;">
+            <table style="width: 50%;" border="1" cellspacing="0" cellpadding="5px" >
+                <caption>My Skills</caption><!--caption tag is used to set the title of the table-->
+                    <thead style="text-align: left;">
+                        <tr><!--table row-->
+                           <!--<th>S.no</th>--> 
+                            <th colspan="2" style="width: 20%;">SUBJECT</th>
+                            <th>MARKS</th>
+                            <th>TOTAL</th>
+                            <!--table header-->
+                        </tr>
+                       <!--colspan and rowspan is used to spanning(combinig) the respective columns and rows-->
+                    </thead>
+                    <tbody>
+                        <tr style="height: 50px;">
+                            <td><!--table data-->1</td>
+                            <td>English</td>
+                            <td>100</td>
+                            <td rowspan="2">100</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>maths</td>
+                            <td>92</td>
+                        </tr>
+
+                    </tbody>
+            </table>
+        </div>
+
+            <!--how to create list-->
+            <!--unorderd list-->
+            <h4>     NAMES</h4>
+            <ul style="list-style-type:circle;">
+                <li>sanjai
+                    <ul style="list-style-type: square;">
+                        <li>csbs</li>
+                    </ul>
+                </li>
+
+                <li>sanjai
+                    <ul style="list-style-type: square;">
+                        <li>sivakumar</li>
+                        <li>hemalatha</li>
+                    </ul>
+                </li>
+                <li>kumar</li>
+            </ul>
+            <ol type="A"> <!--type = a,A,i,I-->
+                <li>sanjai</li>
+                <li>sivakumar</li>
+            </ol>
+
+            
+
+            <!--div and span both are containers-->
+            <!--div is block element-->
+            <!--span is inline element-->
+            <!--classes and id-->
+
+            <!--nav this is also the container used for creation of navigation menu-->
+
+
+            <!--id (.) is used for navigation like goto statement in c
+                id id unique one particular element to the page
+                cannot used for more than 1 elements -->
+            <!--class (#) is used for more than 1 elements -->
+
+            <!-- # class
+                 . id
+                 * universal selector
+            -->
+
+            <a href="#img">go to image</a>
+            <br>
+
+            <!--iframe -> used to loading the another website into our current website-->
+            <!--NOTE: that must be a HTML local website-->
+            <iframe src="EGRI.html" style="width: 100%;" height="400px" border="none"></iframe>
+
+            <br><br><br><br><br><br><br><br><br><br><br>    
+
+            <a href="EGRI.html" target="ibox">open Eagri page</a> 
+            <a href="TIME_TABLE.html" target="ibox">open Time Table page</a>
+            <a href="images/sanjai 0.jpg" target="ibox">open sanjai image</a>
+            <a href="images/gosu.mp4" target="ibox">open gopi sudhakar video</a>
+            <br>
+            <br>
+            <iframe src="" name="ibox" height="500px" width="900px"></iframe>
+
+            <br>
+            <br><br><br> 
+           
+
+            <!--form ->used to get the details of the user-->
+            <!--form -> attribute "action" is used to do the actions of js and it loads the another pages, when submit is clicked-->
+            <!--
+                <label>  used to specify the user to give the input , like printf
+                <input>  self closing tag, used to get the input , like scanf
+            -->
+            <!--POPULAR TYPES OF INPUT
+                    button
+                    text ,required
+                    number -> only numbers
+                    password ,required
+                    date    ,required
+                    radio ->for radio, we should give the label after the input 
+                    checkbox
+                    reset
+                    file
+                    color -> color picker
+                    range ->price scroller in amazon
+            -->
+            <!--required ->give the type required, which means , manatory data, without this data submit form will not works-->
+            <!--value -> used to fill the field value which was already known to you, and this value is modifiable by the user -->
+            <!--disabled -> used to disable the field , once we fixed the value of the field we may disable the input box-->
+            <!--placeholder -> used to instruct the user to type -->
+
+
+            <!--for form , we can use fieldset and legend to highlight and enhance the form
+                fieldset id used to put the box over the form-->
+
+        <center>
+            <fieldset>
+               <legend><b>sign up</b></legend>
+            <form action="EGRI.html">
+               
+                <label>name</label>
+                <input type="text">
+                <br>
+
+                <label>name</label>
+                <input type="text" value="sanjai">
+                <br>
+
+                <label>name</label>
+                <input type="text" value="sanjai" disabled>
+
+                <br><label>name</label>
+                <input type="text" placeholder="Enter the name">
+                <br>
+
+                <label>password</label>
+                <input type="password" required placeholder="Enter the password">
+                <br>
+
+                <label>phone no.</label>
+                <input type="number">
+                <br>
+
+                <label>D.O.B</label>
+                <input type="date" required>
+                <br>
+
+                <input type="radio" name="gender">
+                <label>male</label>   <!--normally we can click everything, so we should use name attribute and give the same 
+                                        name to all the tags, to click only one option-->
+                <input type="radio" name="gender">
+                <label>female</label>
+                <input type="radio" name="gender">
+                <label>others</label>
+
+                <br>
+
+                <input type="checkbox">
+                <label>agree terms and conditions</label>
+
+                <br>
+                <!--select is used to choose the particular option-->
+                <select>
+                    <option >c</option>
+                    <option >c<sup>++</sup></option>
+                    <option >java</option>
+                    <option >python</option>
+                </select>
+                <!--
+                <select multiple> //used to select multiple choices
+                    <option value="1">c<sup>++</sup></option>
+                    <option value="2">c</option>
+                    <option value="3">java</option>
+                -->
+                <br>
+                <label>Enter your address</label>
+                <textarea rows="5" cols="30"></textarea>
+                    <!--textarea is used to create a space for enter some large paragragh of data from the user
+                    we can able to controls its height and width by incresing and decreasing its rows and columns-->
+
+                <br>
+                <label>upload your certificate</label>
+                <input type="file"> <!-- default we can able to select only one file-->
+
+                <!-- to select multiple files use multiple keyword in input-->
+                 <br>
+                 <label>upload multiple files</label>
+                 <input type="file" multiple>
+                
+                 <br>
+                 <input type="color">
+                 <!--type color => gives the color picker-->
+                 <br>
+                 <input type="range">
+                 <!--type range => amazon price scroller-->
+                
+                <br>
+                <input type="submit" ><!--save the contents and reloads-->
+                <input type="reset"> 
+                <button>save </button> <!--same as submit but in button we can customize the text-->
+            </form>
+        </fieldset>
+    </center>
+
+
+    </body>
+
+
+  </html>
