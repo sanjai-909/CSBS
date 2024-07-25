@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<iostream>
+int main(){
+    int a,apple;
+printf("Hello world\n");//comment1
+/*comment2*/
+/*sanjai 
+
+
+    sivkumae*/
+    
+}
