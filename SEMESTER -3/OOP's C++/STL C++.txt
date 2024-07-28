@@ -1,0 +1,1039 @@
+							STL=> Standard Templqate Library
+
+Containers:
+
+1. vector - dynamic array
+2. list - doubly-linked list
+3. deque - double-ended queue
+4. set - sorted set of unique elements
+5. multiset - sorted set of elements (allows duplicates)
+6. map - sorted associative container (key-value pairs)
+7. multimap - sorted associative container (key-value pairs, allows duplicates)
+8. unordered_set - unordered set of unique elements
+9. unordered_multiset - unordered set of elements (allows duplicates)
+10. unordered_map - unordered associative container (key-value pairs)
+11. unordered_multimap - unordered associative container (key-value pairs, allows duplicates)
+12. stack - last-in, first-out (LIFO) container
+13. queue - first-in, first-out (FIFO) container
+14. priority_queue - priority-based queue
+
+Algorithms:
+
+1. sort - sorts a range of elements
+2. stable_sort - sorts a range of elements (preserves order of equal elements)
+3. partial_sort - sorts a range of elements (partially)
+4. nth_element - finds the nth element in a range
+5. find - finds an element in a range
+6. find_if - finds an element in a range (with a predicate)
+7. find_first_of - finds the first element in a range (from a set of elements)
+8. adjacent_find - finds adjacent equal elements in a range
+9. count - counts the number of elements in a range
+10. count_if - counts the number of elements in a range (with a predicate)
+11. accumulate - calculates the sum of a range of elements
+12. inner_product - calculates the inner product of two ranges
+13. transform - applies a function to each element in a range
+14. replace - replaces elements in a range
+15. remove - removes elements from a range
+Here are some examples of using the functions in the <algorithm> header:
+
+Sorting
+
+- sort(): Sorts elements in a range in ascending order.
+
+std::vector<int> vec = {3, 1, 4, 1, 5};
+std::sort(vec.begin(), vec.end());
+// vec is now {1, 1, 3, 4, 5}
+
+- stable_sort(): Sorts elements in a range in ascending order, preserving the relative order of equal elements.
+
+std::vector<int> vec = {3, 1, 4, 1, 5};
+std::stable_sort(vec.begin(), vec.end());
+// vec is now {1, 1, 3, 4, 5}
+
+Searching
+
+- find(): Finds the first occurrence of an element in a range.
+
+std::vector<int> vec = {1, 2, 3, 4, 5};
+auto it = std::find(vec.begin(), vec.end(), 3);
+if (it != vec.end()) {
+    std::cout << "Found 3 at index " << it - vec.begin() << std::endl;
+}
+
+- find_if(): Finds the first element in a range that satisfies a predicate.
+
+std::vector<int> vec = {1, 2, 3, 4, 5};
+auto it = std::find_if(vec.begin(), vec.end(), [](int x) { return x > 3; });
+if (it != vec.end()) {
+    std::cout << "Found first element greater than 3 at index " << it - vec.begin() << std::endl;
+}
+
+Counting
+
+- count(): Counts the number of occurrences of an element in a range.
+
+std::vector<int> vec = {1, 2, 2, 3, 3, 3};
+int count = std::count(vec.begin(), vec.end(), 3);
+std::cout << "Count of 3: " << count << std::endl;
+
+- count_if(): Counts the number of elements in a range that satisfy a predicate.
+
+std::vector<int> vec = {1, 2, 3, 4, 5};
+int count = std::count_if(vec.begin(), vec.end(), [](int x) { return x > 3; });
+std::cout << "Count of elements greater than 3: " << count << std::endl;
+
+Manipulating
+
+- copy(): Copies elements from one range to another.
+
+std::vector<int> src = {1, 2, 3};
+std::vector<int> dst(3);
+std::copy(src.begin(), src.end(), dst.begin());
+// dst is now {1, 2, 3}
+
+- transform(): Applies a function to each element in a range.
+
+std::vector<int> vec = {1, 2, 3};
+std::transform(vec.begin(), vec.end(), vec.begin(), [](int x) { return x * 2; });
+// vec is now {2, 4, 6}
+
+These are just a few examples of the many functions available in the <algorithm> header. Each function has its own specific use case and can be used to solve a wide range of problems.
+
+next_permutation(vec.begin(),vec.end()); // permutates in lexicographical order.
+*max_element(vec.begin(),vec.end());
+*min_element(vec.begin(),vec.end());
+__builtin_popcount(num); // if you pass the number , it converts it into binary and returns the number of digits sets to 1
+	
+///////////////////////////////////////////////////
+The C++ Utility Library provides various functions for working with pairs, tuples, and other utility functions. Here are some of the available functions and their usage:
+
+Pairs
+
+1. std::make_pair(a, b): Creates a pair object with elements a and b.
+2. std::pair<T1, T2>::first: Accesses the first element of the pair.
+3. std::pair<T1, T2>::second: Accesses the second element of the pair.
+
+Tuples
+
+1. std::make_tuple(a, b, c, ...): Creates a tuple object with elements a, b, c, etc.
+2. std::get<I>(tuple): Accesses the I-th element of the tuple.
+3. std::tuple_size<T>::value: Returns the number of elements in the tuple.
+4. std::tuple_element<I, T>::type: Returns the type of the I-th element in the tuple.
+
+Other Utility Functions
+
+1. std::swap(a, b): Swaps the values of a and b.
+2. std::forward<T>(t): Forwards the argument t to another function, preserving its value category.
+3. std::move(t): Moves the value of t to another variable, leaving t in a valid but unspecified state.
+4. std::exchange(a, b): Exchanges the value of a with b and returns the old value of a.
+5. std::as_const(t): Returns a constant reference to t.
+6. std::addressof(t): Returns the address of t, even if t is an object with an overloaded & operator.
+
+Example Usage
+
+
+#include <utility>
+#include <tuple>
+#include <iostream>
+
+int main() {
+    // Pairs
+    std::pair<int, std::string> p = std::make_pair(1, "hello");
+    std::cout << p.first << " " << p.second << std::endl;
+
+    // Tuples
+    std::tuple<int, std::string, double> t = std::make_tuple(1, "hello", 3.14);
+    std::cout << std::get<0>(t) << " " << std::get<1>(t) << " " << std::get<2>(t) << std::endl;
+
+    // Swap
+    int a = 1, b = 2;
+    std::swap(a, b);
+    std::cout << a << " " << b << std::endl;
+
+    // Move
+    std::string s = "hello";
+    std::string t = std::move(s);
+    std::cout << s << " " << t << std::endl;
+
+    return 0;
+}
+
+This code demonstrates the usage of pairs, tuples, and other utility functions in the C++ Utility Library.
+Iterators:
+
+1. iterator - a pointer-like object for traversing containers
+2. const_iterator - a constant pointer-like object for traversing containers
+3. reverse_iterator - a pointer-like object for traversing containers in reverse
+4. const_reverse_iterator - a constant pointer-like object for traversing containers in reverse
+
+Functors:
+
+1. less - a functor for comparing elements (less than)
+2. greater - a functor for comparing elements (greater than)
+3. equal_to - a functor for comparing elements (equal to)
+4. not_equal_to - a functor for comparing elements (not equal to)
+
+Adapter classes:
+
+1. stack - adapts a container to provide stack operations
+2. queue - adapts a container to provide queue operations
+3. priority_queue - adapts a container to provide priority queue operations
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+CONTAINERS=>Datatypes used to store Elements
+
+1)pair<datatype,datatype> variable_name;
+*multiple datatypes are allowed
+
+	LILBRARY => #include <utility>
+
+
+	pair<int,int> a;
+
+//value declarations
+	a.first=10;
+	a.second=20;
+	
+	pr = make_pair(10,20);
+	
+	pr = {10,20};
+
+	pair<int,int> a(10,20);
+	pair<int,int> a{10,20};
+
+//nested pair
+	pair<int,int> a;
+	pair<pair<int,int>,int> b;
+	b.first.first;
+	b.first.second;
+	b.second;
+
+1.Constructor: pair(a, b) - Creates a pair with elements a and b.
+2. Member Variables:
+    - first: Accesses the first element of the pair.
+    - second: Accesses the second element of the pair.
+3. Assignment Operators:
+    - operator=: Assigns a new value to the pair.
+    - operator==: Checks if two pairs are equal.
+    - operator!=: Checks if two pairs are not equal.
+    - operator<: Compares two pairs lexicographically.
+4. Swap: swap(pair&) - Swaps the elements of two pairs.
+5. Make Pair: make_pair(a, b) - Creates a pair from two values (convenience function).
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+2)VECTOR => Dynamic Array
+
+Accessed by Iterators and Indices
+
+	LIBRARY => #inculde <vector>
+
+	vector<int> a; // no size
+	vector<int> a(5); // array with size 5 and all elemets are initialized with 0
+	vector<int> a(5,1); // array with size 5 and all elemets are initialized with 1
+	vector<int> a{1,2,3,4,5};
+	vector<pair<int,int>> a; //a[0].first // a[0].second
+
+	vector<int> a{1,2,3,4,5,6};
+	//its size is 6
+	a.resize(7); // all the elemets in the array remains same and new block of memory added at the last.
+	a.resize(3); // first 3 elements of the array remains same and all other elements are removed from that array.
+
+//iterator => address
+1. Constructor:
+    - vector(): Creates an empty vector.
+    - vector(n): Creates a vector with n default-constructed elements.
+    - vector(n, value): Creates a vector with n copies of value.
+2. Element Access:
+    - operator[]: Accesses the element at the specified index.
+    - at(index): Accesses the element at the specified index, with bounds checking.
+    - front(): Returns a reference to the first element.
+    - back(): Returns a reference to the last element.
+3. Modifiers:
+    - push_back(element): Adds an element to the end of the vector.
+    - pop_back(): Removes the last element.
+    - insert(iterator, element): Inserts an element at the specified position.
+    - insert(iterator, no. times, element); Inserts an element at the specified position of n times
+    - erase(iterator): Removes the element at the specified position.
+    - erase(iterator1, iterator2); Removes the element between iterator1 and iterator2
+    - clear(): Removes all elements.
+4. Capacity:
+    - size(): Returns the number of elements.
+    - capacity(): Returns the maximum number of elements that can be stored.
+    - resize(n): Resizes the vector to n elements.
+    - reserve(n): Reserves space for n elements.
+5. Iterators:
+    - begin(): Returns an iterator to the beginning of the vector.
+    - end(): Returns an iterator to the end of the vector.
+6. Other Functions:
+    - empty(): Checks if the vector is empty.
+    - max_size(): Returns the maximum possible size of the vector.
+    - assign(n, value): Assigns n copies of value to the vector.
+    - swap(vector) : swaps the vector
+    - copy(vector) : copy the vector
+7. Count function // in algorithm library
+	count(myVector.begin(), myVector.end(), target_element);
+
+vector<int> a{1,2,3};
+vector<int> b{4,5,6};
+b.swap(a); //swaps a and b
+b.copy(a); //copy the value of a in b
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+iterator //memory address
+In C++, an iterator is an object that allows you to traverse and access elements in a container, such as a vector, list, or map. Here are some key things to know about iterators:
+
+Types of Iterators:
+
+1. Input Iterator: Can read elements, but not modify them.
+2. Output Iterator: Can write elements, but not read them.
+3. Forward Iterator: Can read and write elements, and move forward.
+4. Bidirectional Iterator: Can read and write elements, and move forward and backward.
+5. Random Access Iterator: Can read and write elements, and move freely in any direction.
+
+Iterator Operations:
+
+1. Dereference (*it): Accesses the element pointed to by the iterator.
+2. Increment (++it): Moves the iterator to the next element.
+3. Decrement (--it): Moves the iterator to the previous element (bidirectional and random access iterators only).
+4. Comparison (it1 == it2): Checks if two iterators point to the same element.
+5. Assignment (it1 = it2): Assigns one iterator to another.
+
+Common Iterator Functions:
+
+1. begin(): Returns an iterator to the first element of a container.
+2. end(): Returns an iterator to the end of a container (one past the last element).
+3. rbegin(): Returns a reverse iterator to the last element of a container.
+4. rend(): Returns a reverse iterator to the beginning of a container (one before the first element).
+
+vector<int> a{1,2,3,4,5,6};
+
+declaration of iterator =>vector<int>::iterator
+
+use 'auto' to determine the type by the compiler itself
+
+vector<int>::iterator it= a.begin(); // points the a[0]=1
+			= a.end(); //points the a[n]=null // a[n-1]=6
+			= a.rbegin(); //first element from the last // a[n-1]=6
+			= a.rend(); //points the a[-1]
+std::vector<int> v = {1, 2, 3, 4, 5};
+    for (auto it = v.begin(); it != v.end(); ++it) {
+        std::cout << *it << std::endl;
+    }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+3)LIST=> Doubly Linked List
+
+Only Acesssed by Iterators
+
+The list container is a doubly-linked list data structure that allows efficient insertion and deletion of elements at any position. Here are some key features and operations of the list container:
+
+Key Features:
+
+1. Doubly-linked list: Each element in the list points to both the next and previous elements, allowing for efficient traversal in both directions.
+2. Dynamic size: The list can grow or shrink dynamically as elements are added or removed.
+3. Non-contiguous memory allocation: Elements are stored in non-contiguous memory locations, allowing for efficient insertion and deletion.
+
+Common Operations:
+
+1. Insertion:
+    - push_front(element): Inserts an element at the beginning of the list.
+    - push_back(element): Inserts an element at the end of the list.
+    - insert(iterator, element): Inserts an element at the specified position.
+2. Deletion:
+    - pop_front(): Removes the first element from the list.
+    - pop_back(): Removes the last element from the list.
+    - erase(iterator): Removes the element at the specified position.
+3. Traversal:
+    - begin(): Returns an iterator to the first element in the list.
+    - end(): Returns an iterator to the end of the list (one past the last element).
+    - rbegin(): Returns a reverse iterator to the last element in the list.
+    - rend(): Returns a reverse iterator to the beginning of the list (one before the first element).
+4. Search:
+    - find(element): Searches for an element in the list and returns an iterator to it if found.
+5. Size and Capacity:
+    - size(): Returns the number of elements in the list.
+    - max_size(): Returns the maximum number of elements the list can hold.
+    - empty(): Returns true if the list is empty, false otherwise.
+
+Advantages:
+
+1. Efficient insertion and deletion at any position.
+2. Good memory locality for sequential access.
+
+Disadvantages:
+
+1. Slow search and access times compared to other containers like vector or map.
+2. More memory overhead due to the doubly-linked list structure.
+
+Use Cases:
+
+1. Implementing a queue or a stack.
+2. Managing a list of elements that need to be frequently inserted or deleted at arbitrary positions.
+3. Implementing a graph or a network, where nodes need to be traversed in a specific order.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+4)dequeue => Double Ended Queue
+The deque (double-ended queue) is a dynamic array-based container that allows efficient insertion and deletion of elements at both ends (front and back). Here are some key features and operations of the deque container:
+
+Key Features:
+
+1. Dynamic array-based: The deque uses a dynamic array to store elements, allowing for efficient memory management.
+2. Double-ended: Elements can be inserted or deleted at both the front and back of the deque.
+3. Non-contiguous memory allocation: The deque uses a combination of contiguous and non-contiguous memory allocation to store elements.
+
+Common Operations:
+
+1. Insertion:
+    - push_front(element): Inserts an element at the front of the deque.
+    - push_back(element): Inserts an element at the back of the deque.
+    - insert(iterator, element): Inserts an element at the specified position.
+2. Deletion:
+    - pop_front(): Removes the first element from the deque.
+    - pop_back(): Removes the last element from the deque.
+    - erase(iterator): Removes the element at the specified position.
+3. Traversal:
+    - begin(): Returns an iterator to the first element in the deque.
+    - end(): Returns an iterator to the end of the deque (one past the last element).
+    - rbegin(): Returns a reverse iterator to the last element in the deque.
+    - rend(): Returns a reverse iterator to the beginning of the deque (one before the first element).
+4. Search:
+    - find(element): Searches for an element in the deque and returns an iterator to it if found.
+5. Size and Capacity:
+    - size(): Returns the number of elements in the deque.
+    - max_size(): Returns the maximum number of elements the deque can hold.
+    - empty(): Returns true if the deque is empty, false otherwise.
+
+Advantages:
+
+1. Efficient insertion and deletion at both ends.
+2. Good memory locality for sequential access.
+3. Faster than list for random access.
+
+Disadvantages:
+
+1. Slower than vector for random access.
+2. More memory overhead due to the dynamic array-based structure.
+
+Use Cases:
+
+1. Implementing a queue or a stack.
+2. Managing a list of elements that need to be frequently inserted or deleted at both ends.
+3. Implementing a cache or a buffer, where elements need to be added or removed from both ends
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+5) STACK
+The stack is a container adapter that provides a Last-In-First-Out (LIFO) data structure, where elements are added and removed from the top of the stack. Here are some key features and operations of the stack container:
+
+Key Features:
+
+1. Last-In-First-Out (LIFO): Elements are added and removed from the top of the stack.
+2. Container adapter: The stack uses an underlying container (such as vector, list, or deque) to store elements.
+3. Dynamic size: The stack can grow or shrink dynamically as elements are added or removed.
+
+Common Operations:
+
+1. Push:
+    - push(element): Adds an element to the top of the stack.
+2. Pop:
+    - pop(): Removes the top element from the stack.
+3. Top:
+    - top(): Returns a reference to the top element of the stack.
+4. Size and Capacity:
+    - size(): Returns the number of elements in the stack.
+    - empty(): Returns true if the stack is empty, false otherwise.
+5. Other:
+    - swap(stack&): Swaps the contents of two stacks.
+
+Note: The stack container does not provide direct access to elements other than the top one. It's designed to be used as a LIFO data structure.
+
+Example:
+
+#include <stack>
+#include <iostream>
+
+int main() {
+    std::stack<int> myStack;
+
+    myStack.push(1);
+    myStack.push(2);
+    myStack.push(3);
+
+    std::cout << myStack.top() << std::endl;  // Output: 3
+
+    myStack.pop();
+
+    std::cout << myStack.top() << std::endl;  // Output: 2
+
+    return 0;
+}
+
+Use Cases:
+
+1. Evaluating postfix expressions.
+2. Implementing recursive algorithms iteratively.
+3. Managing a list of elements that need to be processed in reverse order.
+4. Implementing a parser or a compiler.
+5. Managing a list of undo/redo operations.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+6) QUEUE
+
+The queue is a container adapter that provides a First-In-First-Out (FIFO) data structure, where elements are added to the end and removed from the front. Here are some key features and operations of the queue container:
+
+Key Features:
+
+1. First-In-First-Out (FIFO): Elements are added to the end and removed from the front.
+2. Container adapter: The queue uses an underlying container (such as vector, list, or deque) to store elements.
+3. Dynamic size: The queue can grow or shrink dynamically as elements are added or removed.
+
+Common Operations:
+
+1. Enqueue:
+    - push(element): Adds an element to the end of the queue.
+2. Dequeue:
+    - pop(): Removes the front element from the queue.
+3. Front:
+    - front(): Returns a reference to the front element of the queue.
+4. Back:
+    - back(): Returns a reference to the back element of the queue.
+5. Size and Capacity:
+    - size(): Returns the number of elements in the queue.
+    - empty(): Returns true if the queue is empty, false otherwise.
+6. Other:
+    - swap(queue&): Swaps the contents of two queues.
+
+Note: The queue container does not provide direct access to elements other than the front and back ones. It's designed to be used as a FIFO data structure.
+
+Example:
+
+#include <queue>
+#include <iostream>
+
+int main() {
+    std::queue<int> myQueue;
+
+    myQueue.push(1);
+    myQueue.push(2);
+    myQueue.push(3);
+
+    std::cout << myQueue.front() << std::endl;  // Output: 1
+
+    myQueue.pop();
+
+    std::cout << myQueue.front() << std::endl;  // Output: 2
+
+    return 0;
+}
+
+Use Cases:
+
+1. Job scheduling.
+2. Print queues.
+3. Network buffers.
+4. Implementing breadth-first search (BFS) algorithms.
+5. Managing a list of elements that need to be processed in the order they were received.
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+7) PRIORITY QUEUE
+A priority queue is a type of data structure that allows elements to be inserted and removed based on their priority. It's a queue, but instead of following the First-In-First-Out (FIFO) principle, elements are ordered based on their priority.
+
+Here's how it works:
+
+1. Elements are inserted with a priority: Each element is assigned a priority when it's added to the queue. This priority can be based on various factors, such as urgency, importance, or any other criteria.
+2. Elements are ordered by priority: The elements in the queue are ordered from highest priority to lowest priority.
+3. Highest-priority element is removed first: When an element is removed from the queue, the highest-priority element is selected and removed first.
+4. Ties are broken by insertion order: If two or more elements have the same priority, the element that was inserted first is removed first.
+
+Priority queues are useful in various applications, such as:
+
+- Scheduling tasks based on priority
+- Handling interrupts in operating systems
+- Managing resources in networks
+- Implementing algorithms like Dijkstra's or A* search
+
+There are different types of priority queues, including:
+
+- Binary Heap: A complete binary tree where each parent node has a higher priority than its children.
+- Binomial Heap: A collection of binary trees that satisfy the heap property.
+- Fibonacci Heap: A data structure that combines the benefits of binary and binomial heaps.
+
+
+1. Insert (or Enqueue): Adds a new element to the queue with a specified priority.
+
+Usage: pq.insert("Task A", 3) - adds "Task A" with priority 3.
+
+1. Delete (or Dequeue): Removes the highest-priority element from the queue.
+
+Usage: pq.delete() - removes the highest-priority task, e.g., "Task B" with priority 1.
+
+1. Peek (or Top): Returns the highest-priority element without removing it from the queue.
+
+Usage: pq.peek() - returns "Task B" with priority 1, without removing it.
+
+1. IsEmpty: Checks if the queue is empty.
+
+Usage: if pq.isEmpty(): print("No tasks")
+
+1. Size: Returns the number of elements in the queue.
+
+Usage: print(pq.size()) - prints the number of tasks, e.g., 5.
+
+1. UpdatePriority: Changes the priority of a specific element in the queue.
+
+Usage: pq.updatePriority("Task A", 1) - updates "Task A" to priority 1.
+
+1. DecreaseKey: Decreases the priority of a specific element, moving it up in the queue.
+
+Usage: pq.decreaseKey("Task A", 2) - decreases "Task A" priority to 2.
+
+1. IncreaseKey: Increases the priority of a specific element, moving it down in the queue.
+
+Usage: pq.increaseKey("Task A", 4) - increases "Task A" priority to 4.
+
+Example usage scenario:
+
+Suppose we have a task manager that uses a priority queue to schedule tasks based on their urgency.
+
+pq.insert("Task A", 3) - adds a task with medium priority
+pq.insert("Task B", 1) - adds a high-priority task
+pq.insert("Task C", 2) - adds a low-priority task
+
+pq.peek() - returns "Task B" (highest priority)
+pq.delete() - removes "Task B"
+pq.size() - returns 2 (remaining tasks)
+#include <queue>
+#include <iostream>
+
+int main() {
+    // Create a priority queue (max heap by default)
+    std::priority_queue<int> pq;
+
+    // Insert elements
+    pq.push(3);
+    pq.push(1);
+    pq.push(2);
+
+    // Top element (highest priority)
+    std::cout << "Top: " << pq.top() << std::endl;  // prints 3
+
+    // Remove top element
+    pq.pop();
+
+    // Size
+    std::cout << "Size: " << pq.size() << std::endl;  // prints 2
+
+    // Empty?
+    std::cout << "Empty? " << (pq.empty() ? "Yes" : "No") << std::endl;  // prints No
+
+    return 0;
+}
+#include <queue>
+#include <iostream>
+
+int main() {
+    // Create a min heap priority queue
+    std::priority_queue<int, std::vector<int>, std::greater<int>> pq;
+
+    // Insert elements
+    pq.push(3);
+    pq.push(1);
+    pq.push(2);
+
+    // Top element (lowest priority)
+    std::cout << "Top: " << pq.top() << std::endl;  // prints 1
+
+    // Remove top element
+    pq.pop();
+
+    // Size
+    std::cout << "Size: " << pq.size() << std::endl;  // prints 2
+
+    // Empty?
+    std::cout << "Empty? " << (pq.empty() ? "Yes" : "No") << std::endl;  // prints No
+
+    return 0;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+8) SET => unique and sorted
+The std::set is a container class in the Standard Template Library (STL) that stores unique elements in a sorted order. Here's an overview:
+
+Key Features:
+
+1. Unique elements: No duplicates allowed.
+2. Sorted order: Elements are stored in ascending order by default.
+3. Fast lookup: Elements can be searched in logarithmic time (O(log n)).
+4. Insertion and deletion: Elements can be inserted or deleted in logarithmic time (O(log n)).
+
+Common Operations:
+
+1. insert(const T& value): Inserts a new element into the set.
+2. erase(const T& value): Removes an element from the set.
+3. find(const T& value): Searches for an element in the set.
+4. size(): Returns the number of elements in the set.
+5. empty(): Checks if the set is empty.
+
+Example Usage:
+
+#include <set>
+#include <iostream>
+
+int main() {
+    std::set<int> mySet;
+
+    // Insert elements
+    mySet.insert(3);
+    mySet.insert(1);
+    mySet.insert(2);
+    mySet.insert(3); // Duplicate, ignored
+
+    // Print set elements
+    for (auto it = mySet.begin(); it != mySet.end(); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl; // Output: 1 2 3
+
+    // Search for an element
+    if (mySet.find(2) != mySet.end()) {
+        std::cout << "Element found!" << std::endl;
+    }
+
+    // Remove an element
+    mySet.erase(2);
+
+    // Check size and emptiness
+    std::cout << "Size: " << mySet.size() << std::endl; // Output: 2
+    std::cout << "Empty? " << (mySet.empty() ? "Yes" : "No") << std::endl; // Output: No
+
+    return 0;
+}
+
+Custom Comparators:
+
+You can also provide a custom comparator to change the sorting order or behavior:
+
+struct DescendingComparator {
+    bool operator()(int a, int b) {
+        return a > b;
+    }
+};
+
+std::set<int, DescendingComparator> mySet;
+or
+std::set<int, greater<int>()> mySet;
+
+This would store elements in descending order.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+9) UNORDERED_SET
+The std::unordered_set is a container class in the Standard Template Library (STL) that stores unique elements in an unordered manner. Here's an overview:
+
+Key Features:
+
+1. Unique elements: No duplicates allowed.
+2. Unordered: Elements are stored in no particular order.
+3. Fast lookup: Elements can be searched in constant time (O(1)) on average.
+4. Insertion and deletion: Elements can be inserted or deleted in constant time (O(1)) on average.
+
+Common Operations:
+
+1. insert(const T& value): Inserts a new element into the set.
+2. erase(const T& value): Removes an element from the set.
+3. find(const T& value): Searches for an element in the set.
+4. size(): Returns the number of elements in the set.
+5. empty(): Checks if the set is empty.
+
+Example Usage:
+
+#include <unordered_set>
+#include <iostream>
+
+int main() {
+    std::unordered_set<int> mySet;
+
+    // Insert elements
+    mySet.insert(3);
+    mySet.insert(1);
+    mySet.insert(2);
+    mySet.insert(3); // Duplicate, ignored
+
+    // Print set elements
+    for (auto it = mySet.begin(); it != mySet.end(); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl; // Output: 1 2 3 (order may vary)
+
+    // Search for an element
+    if (mySet.find(2) != mySet.end()) {
+        std::cout << "Element found!" << std::endl;
+    }
+
+    // Remove an element
+    mySet.erase(2);
+
+    // Check size and emptiness
+    std::cout << "Size: " << mySet.size() << std::endl; // Output: 2
+    std::cout << "Empty? " << (mySet.empty() ? "Yes" : "No") << std::endl; // Output: No
+
+    return 0;
+}
+
+Hash Function:
+
+The std::unordered_set uses a hash function to map elements to indices of a backing array. You can provide a custom hash function as a template parameter:
+
+struct CustomHash {
+    size_t operator()(int x) {
+        return x * 2;
+    }
+};
+
+std::unordered_set<int, CustomHash> mySet;
+
+This would use the custom hash function to store elements.
+
+Load Factor:
+
+The std::unordered_set also has a load factor, which is the ratio of elements to buckets. When the load factor exceeds a certain threshold, the set is resized to maintain performance.
+
+Note that std::unordered_set is generally faster than std::set for large datasets, but may have slower worst-case performance due to hash collisions.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+10) MULTISET
+The std::multiset is a container class in the Standard Template Library (STL) that stores elements in a sorted order, allowing duplicate elements. Here's an overview:
+
+Key Features:
+
+1. Sorted elements: Elements are stored in ascending order.
+2. Duplicate elements allowed: Multiple copies of the same element can be stored.
+3. Fast lookup: Elements can be searched in logarithmic time (O(log n)).
+4. Insertion and deletion: Elements can be inserted or deleted in logarithmic time (O(log n)).
+
+Common Operations:
+
+1. insert(const T& value): Inserts a new element into the multiset.
+2. erase(const T& value): Removes an element from the multiset.
+3. find(const T& value): Searches for an element in the multiset.
+4. size(): Returns the number of elements in the multiset.
+5. empty(): Checks if the multiset is empty.
+6. count(const T& value): Returns the number of occurrences of an element.
+
+Example Usage:
+
+#include <multiset>
+#include <iostream>
+
+int main() {
+    std::multiset<int> myMultiset;
+
+    // Insert elements
+    myMultiset.insert(3);
+    myMultiset.insert(1);
+    myMultiset.insert(2);
+    myMultiset.insert(3); // Duplicate, allowed
+    myMultiset.insert(3); // Another duplicate, allowed
+
+    // Print multiset elements
+    for (auto it = myMultiset.begin(); it != myMultiset.end(); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl; // Output: 1 2 3 3 3 (sorted order)
+
+    // Search for an element
+    if (myMultiset.find(2) != myMultiset.end()) {
+        std::cout << "Element found!" << std::endl;
+    }
+
+    // Remove an element
+    myMultiset.erase(2);
+
+    // Check size and emptiness
+    std::cout << "Size: " << myMultiset.size() << std::endl; // Output: 4
+    std::cout << "Empty? " << (myMultiset.empty() ? "Yes" : "No") << std::endl; // Output: No
+
+    // Count occurrences of an element
+    std::cout << "Count of 3: " << myMultiset.count(3) << std::endl; // Output: 3
+
+    return 0;
+}
+
+Comparison Function:
+
+By default, std::multiset uses the less-than operator (<) to compare elements. You can provide a custom comparison function as a template parameter:
+
+struct CustomCompare {
+    bool operator()(int x, int y) {
+        return x > y; // Reverse order
+    }
+};
+
+std::multiset<int, CustomCompare> myMultiset;
+
+This would store elements in descending order.
+
+Note that std::multiset is generally slower than std::unordered_set for large datasets due to the overhead of maintaining sorted order. However, it provides faster lookup and insertion/deletion times than std::set when duplicate elements are allowed.
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+11) MAP
+The std::map is a container that stores elements in a key-value pair, where each key is unique and maps to a specific value. It is a part of the Standard Template Library (STL).
+
+Here are some key features of std::map:
+
+1. Key-Value Pair: Each element in the map is a pair of a key and a value.
+2. Unique Keys: No two elements in the map can have the same key.
+3. Sorted Keys: The keys in the map are sorted in ascending order.
+4. Fast Lookup: The map provides fast lookup, insertion, and deletion operations, with an average time complexity of O(log n).
+
+Some common operations that can be performed on a std::map include:
+
+1. Insertion: insert(key, value) - inserts a new element into the map.
+2. Lookup: find(key) - finds the value associated with a given key.
+3. Deletion: erase(key) - removes the element with the given key from the map.
+4. Iteration: begin() and end() - allows iterating over the elements in the map.
+
+Here is an example of using std::map:
+
+#include <map>
+#include <string>
+#include <iostream>
+
+int main() {
+    // Create a map to store names and ages
+    std::map<std::string, int> people;
+
+    // Insert some elements
+    people.insert(std::make_pair("John", 30));
+    people.insert(std::make_pair("Alice", 25));
+    people.insert(std::make_pair("Bob", 40));
+
+    // Lookup an element
+    auto it = people.find("Alice");
+    if (it != people.end()) {
+        std::cout << "Alice's age is " << it->second << std::endl;
+    }
+
+    // Iterate over the elements
+    for (const auto& pair : people) {
+        std::cout << pair.first << " is " << pair.second << " years old" << std::endl;
+    }
+
+    return 0;
+}
+
+This code creates a map to store names and ages, inserts some elements, looks up an element, and iterates over the elements in the map.
+
+Note: std::map is a binary search tree implementation, which means that the keys are sorted and the tree is balanced. This provides efficient lookup, insertion, and deletion operations.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+12)UNORDERED_MAP
+std::unordered_map is a container in the C++ Standard Template Library (STL) that stores elements in a key-value pair, similar to std::map. However, unlike std::map, std::unordered_map does not sort its elements by key. Instead, it uses a hash function to map keys to indices of a backing array, allowing for fast lookup, insertion, and deletion operations with an average time complexity of O(1).
+
+Here are some key features of std::unordered_map:
+
+1. Key-Value Pair: Each element in the unordered_map is a pair of a key and a value.
+2. Unsorted Keys: The keys in the unordered_map are not sorted.
+3. Fast Lookup: The unordered_map provides fast lookup, insertion, and deletion operations, with an average time complexity of O(1).
+4. Hash Function: The unordered_map uses a hash function to map keys to indices of a backing array.
+
+Some common operations that can be performed on a std::unordered_map include:
+
+1. Insertion: insert(key, value) - inserts a new element into the unordered_map.
+2. Lookup: find(key) - finds the value associated with a given key.
+3. Deletion: erase(key) - removes the element with the given key from the unordered_map.
+4. Iteration: begin() and end() - allows iterating over the elements in the unordered_map.
+
+Here is an example of using std::unordered_map:
+
+#include <unordered_map>
+#include <string>
+#include <iostream>
+
+int main() {
+    // Create an unordered_map to store names and ages
+    std::unordered_map<std::string, int> people;
+
+    // Insert some elements
+    people.insert(std::make_pair("John", 30));
+    people.insert(std::make_pair("Alice", 25));
+    people.insert(std::make_pair("Bob", 40));
+
+    // Lookup an element
+    auto it = people.find("Alice");
+    if (it != people.end()) {
+        std::cout << "Alice's age is " << it->second << std::endl;
+    }
+
+    // Iterate over the elements
+    for (const auto& pair : people) {
+        std::cout << pair.first << " is " << pair.second << " years old" << std::endl;
+    }
+
+    return 0;
+}
+
+This code creates an unordered_map to store names and ages, inserts some elements, looks up an element, and iterates over the elements in the unordered_map.
+
+Note: std::unordered_map is implemented using a hash table, which means that the keys are hashed and stored in an array. This provides fast lookup, insertion, and deletion operations, but may result in collisions if the hash function is poorly designed.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+14) MULTIMAP
+std::multimap is a container in the C++ Standard Template Library (STL) that stores elements in a key-value pair, similar to std::map. However, unlike std::map, std::multimap allows multiple elements to have the same key.
+
+Here are some key features of std::multimap:
+
+1. Key-Value Pair: Each element in the multimap is a pair of a key and a value.
+2. Sorted Keys: The keys in the multimap are sorted in ascending order.
+3. Multiple Elements per Key: Multiple elements can have the same key.
+4. Fast Lookup: The multimap provides fast lookup, insertion, and deletion operations, with an average time complexity of O(log n).
+
+Some common operations that can be performed on a std::multimap include:
+
+1. Insertion: insert(key, value) - inserts a new element into the multimap.
+2. Lookup: find(key) - finds the first element with the given key.
+3. Range Lookup: equal_range(key) - finds all elements with the given key.
+4. Deletion: erase(key) - removes all elements with the given key from the multimap.
+5. Iteration: begin() and end() - allows iterating over the elements in the multimap.
+
+Here is an example of using std::multimap:
+
+#include <multimap>
+#include <string>
+#include <iostream>
+
+int main() {
+    // Create a multimap to store names and ages
+    std::multimap<std::string, int> people;
+
+    // Insert some elements
+    people.insert(std::make_pair("John", 30));
+    people.insert(std::make_pair("John", 25)); // Multiple elements with same key
+    people.insert(std::make_pair("Alice", 25));
+    people.insert(std::make_pair("Bob", 40));
+
+    // Lookup all elements with key "John"
+    auto range = people.equal_range("John");
+    for (auto it = range.first; it != range.second; ++it) {
+        std::cout << it->first << " is " << it->second << " years old" << std::endl;
+    }
+
+    return 0;
+}
+
+This code creates a multimap to store names and ages, inserts some elements, looks up all elements with the key "John", and iterates over the elements in the multimap.
+
+Note: std::multimap is implemented using a binary search tree, which means that the keys are sorted and the tree is balanced. This provides fast lookup, insertion, and deletion operations.
