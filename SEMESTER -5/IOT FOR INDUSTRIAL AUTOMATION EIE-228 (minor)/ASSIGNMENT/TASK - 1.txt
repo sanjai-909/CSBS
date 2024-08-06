@@ -1,0 +1,8 @@
+1.Select a simple application, such
+as smart automation, automated irrigation, smart parking, smart lighting, smart
+appliances, intrusion detection, air quality monitoring, or machine diagnosis.
+Identify the cutting-edge technologies required to make it Industry 4.0 ready.
+Determine the suitable components and cloud platforms to enable IoT
+functionality.
+
+Task: Upload a 1 page file as discussed in the class. Only one person in a group can upload. Please mention the Name and Register number of the team members in the file clearly.
