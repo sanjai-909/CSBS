@@ -1,0 +1,15 @@
+Persona 1: Saanvi Bhab
+Problem: 
+1)Saanvi Bhab faces challenges in adapting to the increasing demand for online orders while maintaining traditional cooking methods, leading to inefficiencies and higher levels of food waste.
+2)Striking a balance between modern business requirements and a commitment to preserving traditional culinary practices is difficult, which impacts operational efficiency and customer satisfaction.
+
+
+Persona 2: Sabhyaprakash
+Problem: 
+1)Sabhyaprakash struggles with effectively managing employees, especially in their absence, leading to operational challenges.
+2)They experience difficulties in minimizing food waste and maintaining high family satisfaction with freshly prepared meals, largely due to outdated tools and a preference for traditional cooking techniques.
+
+
+Persona 3: G. Prasanna
+1)G. Prasanna lacks awareness of healthy dietary options due to an overreliance on junk food, resulting in unhealthy eating habits.
+2)The disproportionate consumption of fast food compared to home-cooked meals has led to significant food waste in the household.
