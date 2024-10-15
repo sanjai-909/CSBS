@@ -1,0 +1,299 @@
+Hint: People with this lead a team.
+Answer: Manager
+
+Hint: Money earned from sales.
+Answer: Revenue
+
+Hint: A group working towards a goal.
+Answer: Team
+
+Hint: The cost of borrowing money.
+Answer: Interest
+
+Hint: Making a plan for money.
+Answer: Budget
+
+Hint: This person starts a business.
+Answer: Entrepreneur
+
+Hint: Bringing a new idea to market.
+Answer: Innovation
+
+Hint: A place where business is done.
+Answer: Office
+
+Hint: A financial reward for work.
+Answer: Salary
+
+Hint: The difference between revenue and costs.
+Answer: Profit
+
+Hint: Making things in large amounts.
+Answer: Production
+
+Hint: Selling something online.
+Answer: E-commerce
+
+Hint: A person who buys products.
+Answer: Consumer
+
+Hint: A plan to sell products.
+Answer: Marketing
+
+Hint: Taking a risk with money to grow it.
+Answer: Investment
+
+Hint: Finding the right person for a job.
+Answer: Recruitment
+
+Hint: Something you owe to someone.
+Answer: Debt
+
+Hint: Someone who buys from you regularly.
+Answer: Client
+
+Hint: Money owed by a company.
+Answer: Liability
+
+Hint: Reducing the cost of something.
+Answer: Discount
+
+Hint: Checking the quality of products.
+Answer: Inspection
+
+Hint: Helping a business improve its performance.
+Answer: Consulting
+
+Hint: Setting goals for a company.
+Answer: Strategy
+
+Hint: A short-term financial plan.
+Answer: Budget
+
+Hint: A record of a company’s money.
+Answer: Accounting
+
+Hint: The ability to do many things at once.
+Answer: Multitasking
+
+Hint: Making decisions quickly.
+Answer: Leadership
+
+Hint: Protecting a company from risk.
+Answer: Insurance
+
+Hint: What you give to customers after they buy.
+Answer: Service
+
+Hint: The ability to work with others.
+Answer: Teamwork
+
+Hint: Getting new products to market.
+Answer: Launch
+
+Hint: A written commitment to do something.
+Answer: Contract
+
+Hint: The main person responsible in a company.
+Answer: CEO
+
+Hint: Offering something for free to attract customers.
+Answer: Promotion
+
+Hint: A set of rules for a workplace.
+Answer: Policy
+
+Hint: The image or feeling people associate with a product.
+Answer: Brand
+
+Hint: A place where products are made.
+Answer: Factory
+
+Hint: Working for yourself.
+Answer: Freelance
+
+Hint: Money left after paying expenses.
+Answer: Profit
+
+Hint: A company’s detailed plan for its goals.
+Answer: Business plan
+
+Hint: A person who helps guide a company.
+Answer: Consultant
+
+Hint: Moving products from one place to another.
+Answer: Distribution
+
+Hint: A report showing a company’s financial health.
+Answer: Balance sheet
+
+Hint: A group of people who own a company.
+Answer: Shareholders
+
+Hint: Buying and selling of goods or services.
+Answer: Trade
+
+Hint: Spending money to make something better.
+Answer: Upgrade
+
+Hint: The first step in starting a company.
+Answer: Planning
+
+Hint: Working together to achieve the same goal.
+Answer: Collaboration
+
+Hint: A written agreement between two companies.
+Answer: Contract
+
+Hint: A person who organizes resources to achieve goals.
+Answer: Leader
+
+Hint: A place to store products before selling them.
+Answer: Warehouse
+
+Hint: Making sure a product meets customer needs.
+Answer: Quality control
+
+Hint: Getting people interested in a product.
+Answer: Advertising
+
+Hint: Money that comes from investments.
+Answer: Return
+
+Hint: Making a choice among several options.
+Answer: Decision-making
+
+Hint: Money earned from an investment.
+Answer: Profit
+
+Hint: Learning something to improve your skills.
+Answer: Training
+
+Hint: The person in charge of finances in a company.
+Answer: CFO
+
+Hint: The company’s overall image or identity.
+Answer: Brand
+
+Hint: Taking products to another country.
+Answer: Export
+
+Hint: The total market value of a company's shares.
+Answer: Market capitalization
+
+Hint: A new way of doing something.
+Answer: Innovation
+
+Hint: Doing something at the lowest cost possible.
+Answer: Efficiency
+
+Hint: Producing something in large quantities.
+Answer: Mass production
+
+Hint: Another word for money made by the company.
+Answer: Income
+
+Hint: A company's yearly financial summary.
+Answer: Annual report
+
+Hint: Making something different or better than competitors.
+Answer: Differentiation
+
+Hint: Selling to people around the world.
+Answer: Globalization
+
+Hint: Combining two companies into one.
+Answer: Merger
+
+Hint: Paying for something later.
+Answer: Credit
+
+Hint: What a company owes to others.
+Answer: Debt
+
+Hint: A percentage of profit paid to shareholders.
+Answer: Dividend
+
+Hint: The amount of something a company can make.
+Answer: Capacity
+
+Hint: People a business wants to sell to.
+Answer: Target market
+
+Hint: A market where stocks are traded.
+Answer: Stock exchange
+
+Hint: A person who controls a company's direction.
+Answer: Director
+
+Hint: Organizing people in the right roles.
+Answer: Staffing
+
+Hint: A description of what a company wants to achieve.
+Answer: Vision statement
+
+Hint: Money that is set aside for emergencies.
+Answer: Reserve
+
+Hint: Selling part of a company to the public.
+Answer: IPO (Initial Public Offering)
+
+Hint: A business that operates only on the internet.
+Answer: Online business
+
+Hint: Getting resources from outside the company.
+Answer: Outsourcing
+
+Hint: Money spent on a company's day-to-day activities.
+Answer: Operating cost
+
+Hint: The measure of how well a company does.
+Answer: Performance
+
+Hint: The rules and regulations a company follows.
+Answer: Compliance
+
+Hint: A way to compare your business to others.
+Answer: Benchmarking
+
+Hint: A person responsible for making sure goals are met.
+Answer: Supervisor
+
+Hint: Dividing people into groups based on their needs.
+Answer: Segmentation
+
+Hint: A company that runs in different countries.
+Answer: Multinational
+
+Hint: A strategy to make a company grow.
+Answer: Expansion
+
+Hint: A service that helps customers with issues.
+Answer: Customer support
+
+Hint: The practice of collecting and analyzing data.
+Answer: Data analysis
+
+Hint: The way in which a product is sold.
+Answer: Distribution channel
+
+Hint: A company’s commitment to protect the environment.
+Answer: Sustainability
+
+Hint: When a business stops making profits.
+Answer: Loss
+
+Hint: The study of managing workers.
+Answer: Human resources
+
+Hint: Producing goods by machines in factories.
+Answer: Manufacturing
+
+Hint: A business’s core beliefs and goals.
+Answer: Mission statement
+
+Hint: Working from a different location, often at home.
+Answer: Remote work
+
+Hint: A person responsible for a specific department.
+Answer: Head
