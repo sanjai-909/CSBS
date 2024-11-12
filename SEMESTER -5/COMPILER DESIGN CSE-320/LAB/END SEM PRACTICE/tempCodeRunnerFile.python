@@ -1,0 +1,72 @@
+def lr1_parser(lr1_table, input_string, productions):
+    stack = [0]
+    input_string += '$'
+    input_index = 0
+
+    while True:
+        state = stack[-1]
+        current_symbol = input_string[input_index]
+        action = lr1_table[state].get(current_symbol)
+
+        if action is None:
+            print("Error: Parsing table entry not found.")
+            break
+
+        if action.startswith('shift'):
+            _, new_state = action.split()
+            new_state = int(new_state)
+            stack.append(current_symbol)
+            stack.append(new_state)
+            input_index += 1
+            print(f"Shift: {current_symbol}, State: {new_state}")
+            print("Stack:", stack)
+
+        elif action.startswith('reduce'):
+            _, production_num = action.split()
+            production_num = int(production_num)
+            rhs_length = len(productions[production_num]['rhs']) * 2
+            for _ in range(rhs_length):
+                stack.pop()
+            non_terminal = productions[production_num]['lhs']
+            state = stack[-1]
+            new_state = lr1_table[state].get(non_terminal)
+            stack.append(non_terminal)
+            stack.append(new_state)
+            print(f"Reduce: {productions[production_num]['lhs']} -> {''.join(productions[production_num]['rhs'])}")
+            print("Stack:", stack)
+
+        elif action == 'accept':
+            print("Accepted!")
+            break
+
+        else:
+            print("Error: Parsing table entry not found.")
+            break
+
+
+# LR(1) Parsing Table
+lr1_table = {
+    0: {'a': 'shift 3', 'd': 'shift 4', 'S': 1, 'C': 2},
+    1: {'$': 'accept'},
+    2: {'a': 'shift 6', 'd': 'shift 7', 'C': 5},
+    3: {'a': 'shift 3', 'd': 'shift 4', 'C': 8},
+    4: {'a': 'reduce 3', 'd': 'reduce 3'},
+    5: {'$': 'reduce 1'},
+    6: {'a': 'shift 6', 'd': 'shift 7', 'C': 9},
+    7: {'$': 'reduce 3'},
+    8: {'a': 'reduce 2', 'd': 'reduce 2'},
+    9: {'$': 'reduce 2'}
+}
+
+# Grammar Productions
+productions = {
+    1: {'lhs': 'S', 'rhs': ['C', 'C']},
+    2: {'lhs': 'C', 'rhs': ['a', 'C']},
+    3: {'lhs': 'C', 'rhs': ['d']}
+}
+
+# Input string
+input_string = "aadd"
+
+# Run the LR(1) parser
+lr1_parser(lr1_table, input_string, productions)
