@@ -1,0 +1,192 @@
+1)  Design a Web page with frameset concepts (or iframes):   Divide the page into two rows with 30% and 70% ratio.  
+                     ------ The First row frame shows your name and your details.
+                     --------The Second row frame further divided into two columns( 40%, 60%) 
+                               First column holds your educational qualification as hyperlinked bulleted items. Every bulleted item should show a                                   separate HTML document in the second column (60% frame)
+Note:  Apply all necessary attributes for the tags to improve look and feel of the page
+2) Refer manual for second exercise
+
+
+==========================================================================
+1) Using dialog control of JavaScript,  check whether given number is 
+     a)  odd / even
+     b)  prime / non prime
+     c) divisible by 'N'  or not
+ 2) Write a program for check how many digits in a given number
+
+
+==========================================================================	
+
+
+a)      Practice
+basic javascript codes using embedded script tag, and external script js files.
+
+
+b)      Write
+a Java script code to check, given number is prime or not.
+
+
+c)      Write
+a Java script code to print fibonacci series.
+
+
+d)     Swapping of 2 variables
+
+
+e)      Find out which number is bigger among the array of numbers
+
+
+f)       Check whether an object is a string or not.
+
+
+g)      Create a JavaScript function that will take a string and
+extract a given number of characters from it.
+
+
+h)      Create a JavaScript function that will capitalize the
+initial letter of a string.
+
+
+i)       
+Create
+a JavaScript function that capitalizes the first letter of each string's words.
+
+
+j)       
+Create
+a JavaScript function that concatenates a given string n (default: 1) times.
+
+
+k)      Create a JavaScript function that divides a string into
+segments of a specified size
+
+
+
+
+
+==========================================================================
+Exercise No.6. Java
+Script components like JS alert, JS button, JS popover to understand the usage.
+
+
+a)     
+In
+JavaScript, create a method to add rows to a table when a user clicks the add
+row button.
+
+
+b)     
+Try
+to eliminate items from a drop-down list by writing a JavaScript application.
+
+
+c)     
+Create
+a JavaScript function to obtain the First and Last names' values from the
+registration form and show them in the alert window.
+
+
+d)    
+Create
+a JavaScript application to highlight the text in italics in the next paragraph
+when the mouse hovers over a certain link.
+
+
+e)     
+Create a
+JavaScript function that takes three parameters: a row, a column (to specify a
+
+specific cell), and a string to alter the cell's contents.
+
+
+f)      
+Write a
+JavaScript program to set paragraph
+background color: get the color option
+from
+
+the user.
+
+
+g)     
+Write a
+JavaScript program to count and display dropdown list items (same) in an alert.
+
+
+h)     
+Write a
+JavaScript program to calculate your ideal weight. Note the formula to
+calculate:
+
+Ideal Weight = Height – 100.
+
+====================================================================================
+
+
+RUN ON VS CODE and submit xml documents and DTD file
+Exercise
+No.7:  XML document with validation using
+internal and external Document Type Definition and transformation using XSLT
+
+
+ 
+
+
+a)      Design an xml document with an
+internal DTD for the following:
+
+
+Create a root element as SASTRA, has a child
+element “schools” which is the parent of elements “school”.  SOC, SOM & BL are the TEXT of each
+“school”.  Value of an attribute
+“category” of the first “school” element is “computing”.  Second “school” element contains the
+following attributes (category=’management’, campus=’main’) and 3rd
+‘school’ element consists the attributes (category=’law’, degree= either ‘ug’
+or ‘pg’ but default is ‘ug’). 
+
+
+b)      2.  Create an XML document and external DTD for
+the following
+
+
+Root <Software>.  Child tags <languages>,
+<application> and <system>. 
+Every child element should have minimum 1 child element for them with
+meaningful attributes.  Document should
+have at least one element with no. of occurrences is 2  and attributes with choice based values
+required.
+
+
+c)      Apply the basic styles of XSLT for the
+“books.xml” document.  Transform the
+content on the browser using the following styles: 
+
+
+<xsl:for-each ..>                     
+
+
+<xsl:sort .. >
+
+
+<xsl:if..>
+
+
+<xsl:choice ..>
+
+
+<xsl:apply-templates..>
+
+
+Note:  for the above ex no 3,
+kindly refer the XML document from the following url: https://drive.google.com/file/d/1yB6eNaxEtnzhHnEfJ8T6U_6shwlv0b4p/view?usp=sharing
+
+
+========================================================================================
+1) know about XAMPP installation ;   
+2) write a PHP server script to show your name on web
+3) write a PHP code to expertise  variable declaration , assignment and manipulation and check whether the given value is ODD or EVEN
+4) write a PHP code to retrieve a value from the text box and validate whether it is in the given range of values
+5) write a PHP code to check whether it is in the list of values using Associative Array
+6) complete the exercises mapped in the MANUAL
+
+
+================================================================================	

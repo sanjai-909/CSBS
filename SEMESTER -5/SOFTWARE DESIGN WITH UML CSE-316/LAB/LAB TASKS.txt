@@ -1,0 +1,8 @@
+Create Package and Component Diagrams for Online E-Commerce Platform and identify the modules. Also draw an activity diagram for each modules.
+
+
+Three Category 
+Fiction - Creativity based books
+Nonfiction -  Thesis , Research Article, Literature 
+Educational 
+Develop up to component diagrams - 21.08.2024 for Batch I Lab Session & 26.08.2024 for Batch II Lab Session
