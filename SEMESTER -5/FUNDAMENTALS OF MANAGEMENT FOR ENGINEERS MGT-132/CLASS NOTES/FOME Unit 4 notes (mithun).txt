@@ -1,0 +1,547 @@
+Henry Fayol's 14 principles :
+ 
+1.Division of work/labour -> (specialization of jobs ) Yellarukum ella jobs um theriyathu so jobs ah divide panni divide pannathaiyum(divide & subdivided) divide panni various persons allot pannanum avangaluku enna theryumo ipadi pandra nala work um easy aagum result um nalla varum 
+2.Authority & responsibility -> authority irukura place la than responsibility um irukum so rendum interrelated and authority oru person ku kuduthutanga na avanga than athuku responsibility
+3.Discipline -> According to Fayol  , discipline na sincerity obedience respect of authority and observance of rules and regulation
+4.Unity of command -> oru subordinate irukaru na avangaluku oru boss than order tharanum apadi pandra nala  weakens discipline , divides loyalty , create confusion, delays and escaping responsibilities  ithelam eliminate aagum
+5.Unity of direction -> Oru head ku oru plan than irukanum apo than organization la irukura members lam oru goal noki povanga . Unity of direction illama Unity of command illa 
+6.Subordination of individual to generate interest -> Individuals kalam oru interest irukum ana organization goals ku munadi athu peruse kadaiyathu 
+7.Remuneration -> Worker ku thara remuneration vandhu fair ah irukanum , reasonable ah irukanum and satisfaction ah irukum
+8.Centralisation of authority ->  Top management than yella decision um yedukanum (means concentration of authority at the top level)
+9.Scalar chain -> (The chain of superiors ranging from the ultimate authority to the lowest) ella orders , instruction , messages and requests ellamey scalar chain  la than pass aaganum  higher level to lower level
+10.order ->	material order: ella articles kum oru safe and specific place irukanum
+			social order: suitable person ah suitable jobs ku select pandrathu
+11.Equity of treatment -> Ella worker raiyum equal ah treat pannanum
+12.Stability of workers-> worker um work ah stable ah irukanum
+13.Initiative -> Worker ah encourage pannanum eppana oru work ah initiate pannamodhu aprm management vandhu worker kum opportunity tharanum ideas suggest pandrathuku
+14.Team Spirit (Espirit de crops) -> team kula oru mutual understanding irudha organization goals easy achieve panniralam
+
+*******************************************************************************************************
+
+Classical theory:
+	Ithu oru oldest method ippaiyum follow pandranga , innoru name traditional theory
+	►Scientific management school -> individual  worker oda productivity ah focus pannudhu
+		Frederick W.Taylor than father if scientific management
+		Worker ah productivity ah epadi increase pandrathunu solliruparu 
+		ithula 5 principle irukku to increase efficiency in workplace
+			~ replacement of old rule of thumb method  -> nammala yentha mudivum yedukama  proper ah investigation mulama decision yeduthutu work la apply pannanum
+			~scientific selection and training of workers -> worker ah proper ah select panni avangala train panni work panna vaikanum
+			~cooperation between labour and management -> management kum labours kum cooperation irukanum
+ 			~Maximum output in place of restricted output -> raw material irukuna athu use nammala evalo output tharamudiyumo avolo tharanum 
+			~Equal division of responsibility -> responsibility equal ah divide panni tharanum so work seikaram mudinchirum
+
+	►Administration management school -> Function of management ah focus pannudhu
+	►Bureaucracy management -> overall organizational system ah focus pannudhu
+Neo-classical theory :
+	►Human relation school
+	►Behavioural Management School
+Modern Management theory:
+	►Decision theory school
+	►Quantitative management school
+	►System Management school
+	►Contingency management school
+
+*******************************************************************************************************
+types of conflict:
+
+3 type irukku 
+
+task , relationship , process 
+
+task:
+	conflict over the content and goals of the work (oru work ah pathiyum athoda goal ah pathiyum)
+
+(ithu eppa varum na user ku different needs irukum aprm diff behaviour aprm attitudes irukum athunala varum)
+
+relationship : 
+	conflict based on interpersonal relationship (oru thanipatta uravu kula vera conflict)
+
+(ithu eppa varum na onu personality clashes nala varum illana negative emotional interaction between two or more people nala varum)
+
+process : 
+	conflict over how work gets done (oru work eppadi mudinchi atha pathi)
+
+******************************************
+
+Function or constructive conflict : 
+	work towards the goal of an organization or group (organization oda goal noki work panna athu constructive)
+ 
+	increase info & ideas
+	encourage innovative thinking
+
+Dysfunctional or Destructive Conflict : 
+	Blocks an organization or group from reaching its goals (organization oda goal ah reach pannavidama thadukurathu)
+
+	Tension, anxiety, stress
+	reduce trust
+	reduce info
+
+********************************************
+
+
+Process of conflict 
+
+5 stages irukku 
+
+they show that how conflict begins , grows, and unfolds among groups or individuals with different goals interests or values of the organization
+
+1.potential opposition or incompatibility
+2.cognition and personalization
+3.intention
+4.behavior
+5.outcomes
+
+
+ithu diagram mari varum ref @ lectur conflict pg no 14
+
+1.po or income la 3 irukku 
+
+i.communication
+ii.structure
+iii.personal variables
+
+2.cognition la 2 irukku
+
+i.perceived conflict
+ii.felt conflict
+
+3.intention
+i.competing
+ii.collaboration
+iii.compromising
+iv.avoiding
+v.accommodating
+
+4.behavior la 2 irukku
+
+i.party's behavior
+ii.other's reaction
+
+5.outcomes la 2 irukku
+ 
+i.increased grp performance
+ii.decreased group performance
+
+
+******************************************
+
+strategies to resolve conflicts : 
+
+	1.competing -> I win , You lose
+	2.Collaboration -> I Win , You win
+	3.Avoiding -> No Winner , NO Loser
+	4.Accommodating -> I lose , You win
+	5.Compromising -> you bend , I bend
+
+ 	 
+	1.Accomodation (Friendly helper) -> ithu eppa use aagum na eppa involve aagiruka parties kula nabika illaiyo apa enna pannuvanga na oru party try to smooth the surrounding by using nice words and by emphasizing the points of agreement and playing down the points of disagreement so intha mari pandranala antha discomfort pogi oru trust create aagum and conflict resolve aagum
+
+	2.Avoidance (Impersonal compiler)-> Ithula 2 situation irukku onu -> oru party antha discussion la thalaidama innoru party soldratha ketutu avangaloda choise key poiruvanga 
+rendu -> oru party complete ah antha conflict ah avoid pannitu by maintaining slience . later ah oru meaningful ana resolution solluvanga
+
+	3.Collaboration ->inga enna pannuvanga na team la irukura yellartaiyum conflict ku solution kepanga so oru orutharum nalla nalla idea va solluvanga last la yentha idea team ku ok oh atha yeduthupanga . Inga ellam collaborate pandranala win-win outcome than varum
+
+	4.Competing -> oru person ku than authority and power irukum avangoda mudivu than last matha party ku chance ey tharamatanga . so inga win-lose outcome varum
+
+	5.Compromising -> parties la sanda potutu irukamothey middle laiye give up panniruvanga rendu parties um and identify the resolution ana antha solution vanthu long-lasting ah irukathu aprm temporary ya than irukum . lose-lose outcome than varum 
+
+
+***********************************************
+Stress : 
+ An adaptive response to an external situation that result in physical , psychological and behavioural deviation for an organisational participants 
+
+ 1.stressor -> environmental condition that cause individuals to experience stress
+
+2.Eustress -> positive stress (oru visayatha achieve pandrathula challenges and difficulties ah ninachi vara stress)
+
+3.Dystress -> Negative stress
+
+4.Job strain -> function of workplace demand and the control and individual has in meeting those demand
+
+
+
+types:
+
+acute : short term stress eg: feeling sadness , increase in energy 
+
+chronic stress : Long term stress eg: anxiety and panic attack , high BP
+
+Episodic acute : Regular experience of acute stress
+
+Consequence:
+
+physical:
+High BP
+heart disease
+cancer
+headache
+skin disease
+ulcer
+muscle tension
+
+behavioral:
+excessive smoking
+substance abuse
+accident proneness
+violence
+
+Psychological:
+anxiety
+depression
+low self esteem
+frustration
+burnout
+sleeplessness
+
+
+*********************************************
+
+Factors that influence organization climate :
+
+1.Involvment
+2.co-worker cohesion
+3.physical comfort
+4.supervisor support
+5.autonomy
+6.task orientation 
+7.clarity
+8.managerial control
+9.innovation
+10.work pressure
+
+*****************************************
+
+difference between organ culture and climate:
+
+climate:
+			
+based on psychology.   
+It does not deal with values and norms , it is concerned with the current atmosphere in the organization.
+it is developed through the managerial prescriptions.
+
+
+culture:
+
+based on anthropology & sociology.
+member learn and communicate what is acceptable and unacceptable in the organization.  
+it is long lasting.
+
+
+
+*****************************************
+
+Impression management:
+
+it is a conscious or unconscious process where individuals try to control how others perceive them in a professional setting
+
+(IM na ennana oruthar vanthu mathavanga avara eppadi ninaikiranga nu control pandrathu )
+
+IM techniques:
+Flattery
+apologies
+self promotion
+excuses
+conformity
+favors
+association
+
+******************************************
+types of organization politics 
+
+managing impression
+attacking and blaming
+controlling info
+forming coalitions
+cultivating networks
+creating obligation
+
+
+************************************************
+
+Stages of group formation :
+
+forming -> storming -> norming -> performing -> adjourning .
+
+Group:
+ two or more people who have come together with a common objective 
+
+(neraiya people ku orey idea ah irundha avangala than group nu solluvom)
+
+1.forming:
+(intha stage la than members lam enna pannanum nu kathupanga aprm antha grp la irukura members kalam confusion ah irukum inga than avangalukula oru relationship ah build panna try pannuvanga)
+this is a beginning stage , members begin by planning their work and their new roles . In this stage, the members are learning what to do. This stage is primarily characterized by a feeling of confusion among the group participants as they are now 
+trying to develop floor policies and relationship patterns among themselves
+
+2.Storming:
+(athigama conflict varum group member kula aprm avangaloda work pathi therinchirum , aprm competition athigama aagirum member kula ena nalla perform panna than salary increase aagum so high competition irukum aprm member lam frustration , anger aavanga)
+It is the next stage characterized by a high level of conflict between the members . In this stage , the group members have understood the work and therefore the dispute and the competition are at a high level . People begin to feel the stress of frustration  , resentment and anger . Moreover as the problem festers , the job remains undone.
+
+3.Norming:
+(inga than grp vanthu fun navum enjoyable la vum irukum yena members kula oru relationship form aagirukum so responsibility yalam share pannipanga yena antha grp ah success aaka)
+this is the stage where the grp becomes fun and enjoyable because the interaction among the members is easier productive and cooperative. The grp members now identify with the grp and share a responsibility to achieve the group's desired stage of success.
+
+4.Performing:
+(inga antha grp work ah start pandrathuku full ah prepare aagirupanga aprm grp la irukura members kalam enna na talent irukku nu grp la irukura ellarukum theriyavanthurum athunala yaruku enna kudatha work seikaram mudiyum nu pathu avangalta antha work ah kuduthuruvanga) 
+This is the fourth stage when the group is prepared to start its work sooner or later. At this stage, a sense of belongingness is established because the talents , skills and experience of each group member are acknowledged.  Its give clarity to what needs to and has to be done 
+
+5.Adjourning:
+(ithu vanthu ithu than last stage yentha reason kaga antha grp form aanicho antha reason ah achieve pannirupanga athunala grp ah dissolve panniruvanga)
+this is the closing stage when the grp starts to dissolve itself periodically after meeting the goals for which it was once formed
+
+******************************************************************************************
+
+Theories of leadership:
+
+trait theory: --> leader ku nu thaniya quality and trait irukum athu than avara thaniya yeduthu kaatum aprm oru greatest leader vanthu avar maattum oru periya vishayatha pannamataru mathavangala antha vishayatha pannavaiparu  (leader are born not trained)
+
+Behavior theory:
+
+leader oda behavior ra vachithan avangala non leaders ta irundhu differentiate pannikatudhu 
+
+inga leader vanthu trained not born 
+
+yaruvena leader aagalam seriyana training and instruction irundha
+
+Ohio state studies:-
+1.consideration: oru mutual respect um trust um followers oda create pannuvanga leader aprm task ah vida employee kita than more attention irukum athunala employee lam comfort ah irupanga
+
+2.Initiating structure: inga leader vanthu grp member ta namma enna pannanum eppadi pannanum nu solliruvaru aprm inga task ku than importance kuduparu employees ku avolo kudaka mataru 
+
+University of Michigan studies:-
+
+1.Employee-Oriented leader: ingaiyum leader vanthu employees ku than athigamana attention tharuvaru
+
+2.Production-Oriented leader:
+inga employees ah vida task ku than athigama attention tharuvaru leader 
+
+Managerial Grid:
+
+impoverished management(1,1):inga vanthu production and people rendulaiyumey perusa attention irukathu
+
+task management(9,1):inga vanthu leader task la athiga attention irukum people mela kamiya irukum
+
+middle-of-the-road(5,5):leader vanthu balance ah maintain panni attention ah tharuvaru
+
+Country club(1,9): task ku low attention and people ku high attention tharuvaru
+
+team management(9,9): task kum people kum high attention kuduparu 
+
+
+Contingency theory:-
+(no leadership style is best in all situations)
+ Entha oru particular leadership style um  ella vithamana situation kum suit aagathu
+
+Fiedler's contingency theory:
+oru grp situation vanthu leader ku favourable la vum irukalam unfavourable la vum irukalam
+
+LPC -> Least Preferred Coworker
+low lpc -> task-oriented leader
+high lpc-> relationship-oriented leader
+
+task-orietnted -> leader is best when situation either favourable or unfavourable
+
+relationship-oriented -> leader is best when situation is moderately favourable 
+
+LPC score vanthu 3 element of leadership situation oda correlates aagum
+
+leader-member relations -> grp atmosphere and member's attitude toward and acceptance of the leader
+
+Task structure -> group enna task pannanum nu solliruvaru aprm clear goal irukum
+
+Position power -> leader ku formal authority irukum members mela
+
+Hersey and Blanchard's situation theory:
+
+also known as life cycle theory
+
+ithu enna solluthu na oru successful lana leadership vanthu people ku entha style pudichiruku nu correct ana leadership style la select pandrathulathan irukku nu soldranga 
+
+acceptance -> employee than leader accept apnnikalama illa reject pannalama nu mudivu pandranga so leader oda leadership la than athu mudivagum
+
+readiness -> member ku enna ability irukku and yethula willing irukku oru task ah mudika
+
+telling -> high task , low relationship leadership
+selling -> high task high relationship
+participating->low-high
+delegating->low-low
+
+House's path goal theory:
+worker lam work pandra mari oru nalla environment ah create panni tharathu than oru leader oda vela apadi panni kuduthaley worker lam organization goal ah mudichiduvanga
+
+
+*******************************************************************
+	UNIT 1  imp 2 marks
+
+1.diff admin and management :
+
+admin -> it is concerned with formulation of objective, plan and policies of the organization
+management -> M means getting the work done through and with others by leading and motivating them
+
+admin -> top level in the organization
+management -> Middle and low level in the organization
+
+admin -> policy formulation and objective determination
+management -> Policy executive for objective achievement
+
+admin -> broad and conceptual
+management -> narrow and operational
+
+admin -> determinative
+management -> Executive
+
+2.Hawthrone exp - Elton mayo
+
+avaru vanthu Australian psychologist , researcher and organization theorist 
+
+ivaru Human Relations Movement oda founder
+
+intha reseach ah avaru late 1920 and early 1930 la pannaru ithu enna na oru grp ah irukanga orutharoda behavior nala eppadi group affect aaguthu nu aprm
+work environment eppadi employee 
+oda productivity ah affect pannuthu nu
+
+3.Scientific mgt - Taylor and Fayol:
+
+Scientific mgt is concerned with art of knowing exactly what you want to do and then see in that they do it in the best and cheapest way
+
+
+4.Theory X and Theory Y:
+
+diagram ref @ u-1 history ppt pg no 16
+
+			-->
+management	-->     staff
+			-->
+			-->
+
+		   	-->	     	 	-->
+management	-->     staff	 -->
+			-->	     	 	-->
+			-->	      		-->
+
+X -> dislike for work
+Y -> Work is natural like
+
+X->avoid responsibility
+Y->accept responsibility
+
+X->lack creativity
+Y->High creativity
+
+X->lack self motivation
+Y->Self motivated
+
+
+5.Maslow's hierarchy of needs : 
+
+physiological --> breathing , food ,water, sex , sleep
+
+safety --> security of body , of employment , of the family
+
+love --> Friendship , family , sexual intimacy
+
+Esteem --> self-esteem, confidence, achievement , respect of others and respect by others
+
+Self actualization --> morality ,creativity,problem solving
+
+
+8.Levels of mgt:
+
+top management --> decision lvl
+middle mgt   --> strategic lvl
+First line mgt --> Action lvl
+
+10.Key managerial roles - Mintzberg :
+
+ref @ u-1 history ppt pg no 30
+
+interpersonal --> provide info via feedback 
+informational --> process info
+decisional    --> use info
+
+
+14.Functional areas of mgt :
+ 
+marketing mgt , production mgt , HR mgt , Office mgt , Financial mgt
+
+
+9.POSDCORB:
+
+planning, organizing, staffing, directing, co-ordinating, reporting, budgeting
+
+11.What is delegation:
+
+ithu vanthu other people ah namakaga vela vangurathu mattum illa , people ku work oda responsible pathi remain pandrathu so ithu vanthu oru tough task aprm employee kitta trust um involve aagum
+
+12.Managerial skills:
+
+conceptual skill ->intha skill vanthu top level la irukura employee ku than theva
+Technical skill -> ithu middle level
+Human relation skill -> low level 
+
+
+7.Herzberg theory : ref @ unit 1 history ppt pg no 15
+
+left la hygiene factors
+keela  motivation factors
+
+low hygiene and low motivation -> worst situation employee not motivated and have complaints
+
+low and high -> employee motivated bu they have complaints
+
+high and low -> less complaints and not motivated
+
+high and high -> ideal situation no complaints and motivated
+
+13.Efffectiveness and Efficiency:
+
+    Definition: Effectiveness is about achieving the desired outcome or completing the right tasks. It’s focused on results and ensuring that the goals are met.
+
+    Definition: Efficiency is about completing tasks with minimal resources, time, and effort. It’s focused on the process and how resources are utilized to achieve a goal.
+     
+
+
+*********************************************************************
+	UNIT 2 Imp 2 marks
+
+7.Stages of organization lifecycle:
+entrepreneurial , collectivity , formalization, Elaboration
+
+8.what is bureaucracy:
+ithu yethuku design aagiruku na to manage large-scale administrative task and operations systematically
+it includes 
+rules and standard procedures
+clear tasks and specialization
+hierarchy of authority
+technical competence
+
+9.Downsizing:
+establish criteria for future work needs 
+serach for alternatives 
+communicate more not less
+provide assistance to displaced workers
+help the survivors thrive
+
+10.What are the three organizational control strategies:
+		requirements
+bureaucratic-->rules,standards
+market-->Prices,competition,exchange relatioship
+clan-->tradition,shared values and beliefs, trust
+
+*******************************************************************************
+	UNIT 3 imp 2 marks
+1.diff between team & group:
+
+team na orey goal and objective than irukum active ah work pannuvanga  
+group na collection of individuals who may have similar interests or work
+
+2.diff between leader & manager:
+
+leader na inspiration ah iruparu aprm people ah motivate and influence panni orey goal noki pogavaiparu
+
+manager na focusing on execution , planning , daily enna pandranga nu paaparu
+
+3.differnece between formal and informal group:
+
+formal na organization nala create aagirukum task illana objective ah fulfill panna
+
+informal na natural ah group create aagirukum person relationship , shared interest 
