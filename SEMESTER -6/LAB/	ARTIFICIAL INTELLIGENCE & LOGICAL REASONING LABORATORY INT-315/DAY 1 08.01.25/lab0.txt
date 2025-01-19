@@ -1,0 +1,45 @@
+MATRIX MULTIPLICATION AND ADDITION
+
+import numpy as np
+mat1=[[1,2],
+        [3,4]]
+
+mat2=[[0,5],
+        [3,2]]  
+
+mat1_shape = np.shape(mat1)
+mat2_shape = np.shape(mat2)
+
+mat1_np = np.array(mat1)
+mat2_np = np.array(mat2)
+
+# Matrix Multiplication
+print("Matrix Multiplication:")
+multiplication_result = np.dot(mat1_np, mat2_np)
+print(multiplication_result)
+
+# Matrix Addition
+print("\nMatrix Addition:")
+addition_result = mat1_np + mat2_np
+print(addition_result)
+
+
+===============================================================
+LEFT AND RIGHT ROTATIONS OF INDIAN DENOMINATIONS
+import numpy as np
+
+array = np.array([2000, 500, 100, 50, 10, 5, 2, 1])
+
+rotations = int(input("Enter the number of rotations: "))
+
+# Perform left rotation
+left_rotated = np.roll(array, -rotations)
+
+# Perform right rotation
+right_rotated = np.roll(array, rotations)
+
+print("\nOriginal array:", array)
+print("Left rotated array:", left_rotated)
+print("Right rotated array:", right_rotated)
+
+
